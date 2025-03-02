@@ -138,7 +138,7 @@ Item {
             }
 
 
-            //时长卡
+            //时长
             Rectangle {
                 width: 230 * dpi
                 height: 70 * dpi
@@ -178,7 +178,7 @@ Item {
                         anchors.left: parent.left
                         width: parent.width
                         Text {
-                            text:"时长卡"
+                            text:"时长"
                             font.pixelSize: 16 * dpi
                             color: "white"
                         }
@@ -194,7 +194,7 @@ Item {
                 }
             }
 
-            //周期卡
+            //会员时长
             Rectangle {
                 width: 230 * dpi
                 height: 70 * dpi
@@ -233,7 +233,7 @@ Item {
                         anchors.left: parent.left
                         width: parent.width
                         Text {
-                            text:"周期卡"
+                            text:"会员时长"
                             font.pixelSize: 16 * dpi
                             color: "white"
                         }
@@ -251,60 +251,60 @@ Item {
             }
 
             //时段卡
-            Rectangle {
-                width: 230 * dpi
-                height: 70 * dpi
-                color: "#222733"
-                anchors.right: parent.right
-                anchors.rightMargin: 25 * dpi
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: 23 * dpi
-                radius: 10
-                border.width: 1
-                border.color: "#2B303C"
+            // Rectangle {
+            //     width: 230 * dpi
+            //     height: 70 * dpi
+            //     color: "#222733"
+            //     anchors.right: parent.right
+            //     anchors.rightMargin: 25 * dpi
+            //     anchors.bottom: parent.bottom
+            //     anchors.bottomMargin: 23 * dpi
+            //     radius: 10
+            //     border.width: 1
+            //     border.color: "#2B303C"
 
-                Rectangle {
-                    width: parent.width / 2
-                    height: parent.height
-                    color: "transparent"
-                    anchors.left: parent.left
+            //     Rectangle {
+            //         width: parent.width / 2
+            //         height: parent.height
+            //         color: "transparent"
+            //         anchors.left: parent.left
 
-                    Image {
-                        source: "../res/v2/duration_card.png"
-                        fillMode: Image.PreserveAspectFit
-                        scale: dpi
-                        anchors.verticalCenter: parent.verticalCenter
-                        anchors.right: parent.right
-                        anchors.rightMargin: 20 * dpi
-                    }
-                }
+            //         Image {
+            //             source: "../res/v2/duration_card.png"
+            //             fillMode: Image.PreserveAspectFit
+            //             scale: dpi
+            //             anchors.verticalCenter: parent.verticalCenter
+            //             anchors.right: parent.right
+            //             anchors.rightMargin: 20 * dpi
+            //         }
+            //     }
 
-                Rectangle {
-                    width: parent.width / 2
-                    height: parent.height
-                    color: "transparent"
-                    anchors.right: parent.right
+            //     Rectangle {
+            //         width: parent.width / 2
+            //         height: parent.height
+            //         color: "transparent"
+            //         anchors.right: parent.right
 
-                    Column {
-                        anchors.verticalCenter: parent.verticalCenter
-                        width: parent.width
-                        anchors.left: parent.left
-                        Text {
-                            text:"时段卡"
-                            font.pixelSize: 16 * dpi
-                            color: "white"
-                        }
+            //         Column {
+            //             anchors.verticalCenter: parent.verticalCenter
+            //             width: parent.width
+            //             anchors.left: parent.left
+            //             Text {
+            //                 text:"时段卡"
+            //                 font.pixelSize: 16 * dpi
+            //                 color: "white"
+            //             }
 
-                        Text {
-                            text:payTimeCard ? HttpClient.timecardFree : HttpClient.freeTimecardFree
-                            font.pixelSize: 16 * dpi
-                            color: "#A4A6AB"
-                            width: parent.width
-                            elide: Text.ElideRight
-                        }
-                    }
-                }
-            }
+            //             Text {
+            //                 text:payTimeCard ? HttpClient.timecardFree : HttpClient.freeTimecardFree
+            //                 font.pixelSize: 16 * dpi
+            //                 color: "#A4A6AB"
+            //                 width: parent.width
+            //                 elide: Text.ElideRight
+            //             }
+            //         }
+            //     }
+            // }
 
         }
     }
@@ -333,7 +333,7 @@ Item {
                 }
 
                 Repeater {
-                    model:["时长卡","时段卡","周期卡"]
+                    model:["时长","会员"]
                     delegate: TabButton {
                         id:tabbtnTime
                         width: 70 * dpi
@@ -372,8 +372,6 @@ Item {
                                     HttpClient.getGoodsList(1001)
                                 } else if(index === 1) {
                                     HttpClient.getGoodsList(1002)
-                                } else if(index === 2) {
-                                    HttpClient.getGoodsList(1003)
                                 }
                             }
                         }

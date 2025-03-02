@@ -338,5 +338,7 @@
         <file>res/v2/wechat.png</file>
         <file>res/v2/qq_group.png</file>
         <file>res/v2/icon_refresh.png</file>
+        <file>res/newVersion/svip.png</file>
+        <file>res/newVersion/vip.png</file>
     </qresource>
 </RCC>

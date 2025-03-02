@@ -7,6 +7,8 @@ QT += quick core network quickcontrols2 websockets svg widgets multimedia webeng
 DEFINES += _CRT_SECURE_NO_WARNINGS
 DEFINES += _CRT_NONSTDC_NO_WARNINGS
 
+QMAKE_PROJECT_DEPTH = 0
+
 SOURCES += \
         CommonFunc.cpp \
         FtpClient.cpp \

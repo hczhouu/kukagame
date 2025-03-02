@@ -40,6 +40,7 @@ HttpClient::HttpClient()
     m_timecardPeriod = u8"0天0时0分";
     m_findNewVersion = false;
     m_headLogoUrl = "../res/no-head-logo.png";
+    m_vipFlags = "";
 
     QSettings settings("HKEY_CURRENT_USER\\SOFTWARE\\kukaGame", QSettings::NativeFormat);
     m_strApiUrl = settings.value("apiUrl").toString();
@@ -1164,13 +1165,10 @@ void HttpClient::getGoodsList(int type)
         strUrl.append("goodsFront/appProductList/");
         if (type == 1001)
         {
-            strUrl.append(u8"时长卡");
+            //strUrl.append(u8"时长卡");
         } else if(type == 1002)
         {
-            strUrl.append(u8"周期卡");
-        } else if(type == 1003)
-        {
-            strUrl.append(u8"时段卡");
+            strUrl.append(u8"VIP");
         }
 
         std::string resp;
@@ -1252,7 +1250,18 @@ void HttpClient::parseRefreshClientInfo(const std::string& resp)
     //解析用户信息
     QString strsurplusTotal = itemData.value("surplusTotal").toString();
     QString userId = itemData.value("id").toString();
+    QString vipInfo = itemData.value("member").toString();
 
+    if (vipInfo.compare("SVIP") == 0)
+    {
+        m_vipFlags = "../res/newVersion/svip.png";
+    } else if (vipInfo.compare("VIP") == 0) {
+        m_vipFlags = "../res/newVersion/vip.png";
+    } else {
+        m_vipFlags = "";
+    }
+
+    emit vipFlagsChanged();
     //剩余时长
     QString remainDays = "0";
     QString remainHours = "0";
@@ -1309,16 +1318,16 @@ void HttpClient::parseRefreshClientInfo(const std::string& resp)
     emit remainFreeTimeChanged();
 
     //解析付费时长数据
-    QJsonArray payTimeCardInfo = itemData.value("payTimeCardVos").toArray();
+    QJsonArray payTimeCardInfo = itemData.value("payVipVos").toArray();
     for (int i = 0; i < payTimeCardInfo.size(); ++i)
     {
         QJsonValue val = payTimeCardInfo.at(i);
         QJsonObject objTemp = val.toObject();
         QString strName = objTemp.value("name").toString();
-        if (strName == u8"时长卡")
+        if (strName == u8"时长")
         {
             m_timecardDuration = objTemp.value("remainingDuration").toString();
-        } else if(strName == u8"周期卡") {
+        } else if(strName == u8"会员时长") {
             m_timecardPeriod = objTemp.value("remainingDuration").toString();
         }else if(strName == u8"时段卡") {
             m_timecardFree = objTemp.value("remainingDuration").toString();
@@ -1331,16 +1340,16 @@ void HttpClient::parseRefreshClientInfo(const std::string& resp)
 
 
     //解析体验时长数据
-    QJsonArray freeTimeCardInfo = itemData.value("freeTimeCardVos").toArray();
+    QJsonArray freeTimeCardInfo = itemData.value("freeVipVos").toArray();
     for (int i = 0; i < freeTimeCardInfo.size(); ++i)
     {
         QJsonValue val = freeTimeCardInfo.at(i);
         QJsonObject objTemp = val.toObject();
         QString strName = objTemp.value("name").toString();
-        if (strName == u8"时长卡")
+        if (strName == u8"时长")
         {
             m_freeTimecardDuration = objTemp.value("remainingDuration").toString();
-        } else if(strName == u8"周期卡") {
+        } else if(strName == u8"会员时长") {
             m_freeTimecardPeriod = objTemp.value("remainingDuration").toString();
         }else if(strName == u8"时段卡") {
             m_freeTimecardFree = objTemp.value("remainingDuration").toString();
@@ -1652,4 +1661,6 @@ QString HttpClient::getUserId()
 void HttpClient::userLogout()
 {
     m_strToken.clear();
+    m_vipFlags = "";
+    emit vipFlagsChanged();
 }

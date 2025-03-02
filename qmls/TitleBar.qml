@@ -292,8 +292,8 @@ Rectangle {
         id:btnAccount
         width:30 * dpi
         height:30 * dpi
-        anchors.right: rectSettings.left
-        anchors.rightMargin: 44 * dpi
+        anchors.right: iconVip.left
+        anchors.rightMargin: 15 * dpi
         anchors.verticalCenter: parent.verticalCenter
         background: Rectangle {
             color: "transparent"
@@ -337,6 +337,19 @@ Rectangle {
             text: "账户"
             font.pixelSize: 12  * dpi
         }
+    }
+
+
+    //会员标识
+    Image {
+        id:iconVip
+        //source: "../res/newVersion/svip.png"
+        source: HttpClient.vipFlags
+        fillMode: Image.PreserveAspectFit
+        scale: dpi
+        anchors.right: rectSettings.left
+        anchors.rightMargin: 20 * dpi
+        anchors.verticalCenter: rectSettings.verticalCenter
     }
 
 

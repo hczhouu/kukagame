@@ -51,6 +51,7 @@ public:
     Q_PROPERTY(QString userPass MEMBER m_strUserPass NOTIFY userPassChanged FINAL)
     Q_PROPERTY(bool rememberPass MEMBER m_rememberPass NOTIFY rememberPassChanged FINAL)
     Q_PROPERTY(bool agreePolicy MEMBER m_agreePolicy NOTIFY agreePolicyChanged FINAL)
+    Q_PROPERTY(QString vipFlags MEMBER m_vipFlags NOTIFY vipFlagsChanged FINAL)
 
 private:
     HttpClient();
@@ -122,6 +123,8 @@ signals:
     void agreePolicyChanged();
     void updateTimeCard(int type, const QJsonObject& jsonData);
     void showLoginErrorTips(const QString& errStr);
+
+    void vipFlagsChanged();
 
 public slots:
     void OnTimeOut();
@@ -196,6 +199,7 @@ private:
     bool m_findNewVersion;
     QString m_strFilePackUrl;
     QString m_verMessage;
+    QString m_vipFlags;
 
     QScreen* m_desktop;
     double m_screenDpi;

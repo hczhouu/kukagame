@@ -52,6 +52,7 @@ public:
     Q_PROPERTY(bool rememberPass MEMBER m_rememberPass NOTIFY rememberPassChanged FINAL)
     Q_PROPERTY(bool agreePolicy MEMBER m_agreePolicy NOTIFY agreePolicyChanged FINAL)
     Q_PROPERTY(QString vipFlags MEMBER m_vipFlags NOTIFY vipFlagsChanged FINAL)
+    Q_PROPERTY(double payPercent MEMBER m_payPercent NOTIFY payPercentChanged FINAL)
 
 private:
     HttpClient();
@@ -125,6 +126,7 @@ signals:
     void showLoginErrorTips(const QString& errStr);
 
     void vipFlagsChanged();
+    void payPercentChanged();
 
 public slots:
     void OnTimeOut();
@@ -201,6 +203,7 @@ private:
     QString m_verMessage;
     QString m_vipFlags;
     QString m_vipLabel;
+    double m_payPercent;
 
 
     QScreen* m_desktop;

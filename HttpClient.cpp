@@ -1181,9 +1181,6 @@ void HttpClient::getGoodsList(int type)
             return;
         }
 
-
-        qDebug() << resp.data();
-
         connect(this, &HttpClient::updateTimeCard, this, &HttpClient::OnUpdateTimeCard, Qt::UniqueConnection);
         QByteArray strBuf = QByteArray::fromStdString(resp);
         QJsonParseError jsonError;
@@ -1260,13 +1257,17 @@ void HttpClient::parseRefreshClientInfo(const std::string& resp)
     if (vipInfo.compare("SVIP") == 0)
     {
         m_vipFlags = "../res/newVersion/svip.png";
+        m_payPercent = 0.80;
     } else if (vipInfo.compare("VIP") == 0) {
         m_vipFlags = "../res/newVersion/vip.png";
+        m_payPercent = 0.90;
     } else {
         m_vipFlags = "";
+        m_payPercent = 1.00;
     }
 
     emit vipFlagsChanged();
+    emit payPercentChanged();
     //剩余时长
     QString remainDays = "0";
     QString remainHours = "0";
@@ -1694,3 +1695,4 @@ bool HttpClient::verifyCanBuyVip(const QVariant& goodsName)
 
     return true;
 }
+

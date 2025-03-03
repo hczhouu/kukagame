@@ -194,6 +194,10 @@ Rectangle {
             onClicked: {
                 parent.forceActiveFocus()
                 showSearchResult = false
+
+                // var realPay = Number(pay_Amount) * HttpClient.payPercent
+                // console.log("realPay", HttpClient.payPercent);
+
                 HttpClient.createOrder(goods_id, pay_Amount)
                 payPop.name = goods_name
                 payPop.payAmount = pay_Amount

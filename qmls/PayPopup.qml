@@ -368,7 +368,15 @@ Popup {
                     }
 
                     Text {
-                        text:payAmount
+                        text:{
+                            if (isBuyVIP)
+                            {
+                                return payAmount
+                            }
+
+                            var realPay = Number(payAmount) * HttpClient.payPercent
+                            return realPay.toFixed(2).toString()
+                        }
                         font.pixelSize: 36 * dpi
                         color: "#FF6000"
                         anchors.verticalCenter: parent.verticalCenter

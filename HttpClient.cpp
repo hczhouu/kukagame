@@ -41,6 +41,7 @@ HttpClient::HttpClient()
     m_findNewVersion = false;
     m_headLogoUrl = "../res/no-head-logo.png";
     m_vipFlags = "";
+    m_vipLabel = "";
 
     QSettings settings("HKEY_CURRENT_USER\\SOFTWARE\\kukaGame", QSettings::NativeFormat);
     m_strApiUrl = settings.value("apiUrl").toString();
@@ -1180,6 +1181,9 @@ void HttpClient::getGoodsList(int type)
             return;
         }
 
+
+        qDebug() << resp.data();
+
         connect(this, &HttpClient::updateTimeCard, this, &HttpClient::OnUpdateTimeCard, Qt::UniqueConnection);
         QByteArray strBuf = QByteArray::fromStdString(resp);
         QJsonParseError jsonError;
@@ -1251,6 +1255,7 @@ void HttpClient::parseRefreshClientInfo(const std::string& resp)
     QString strsurplusTotal = itemData.value("surplusTotal").toString();
     QString userId = itemData.value("id").toString();
     QString vipInfo = itemData.value("member").toString();
+    m_vipLabel = vipInfo;
 
     if (vipInfo.compare("SVIP") == 0)
     {
@@ -1663,4 +1668,29 @@ void HttpClient::userLogout()
     m_strToken.clear();
     m_vipFlags = "";
     emit vipFlagsChanged();
+}
+
+bool HttpClient::verifyCanBuyVip(const QVariant& goodsName)
+{
+    if (m_vipLabel.compare("VIP") == 0)
+    {
+        if (goodsName.compare("VIP") == 0)
+        {
+            QString strMsg = u8"您已经是VIP用户,请勿重复购买!";
+            emit showMsgPopup(true, strMsg);
+            return false;
+        }
+    }
+
+    if (m_vipLabel.compare("SVIP") == 0)
+    {
+        if (goodsName.compare("VIP") == 0 || goodsName.compare("SVIP") == 0)
+        {
+            QString strMsg = u8"您已经是SVIP用户,请勿重复购买!";
+            emit showMsgPopup(true, strMsg);
+            return false;
+        }
+    }
+
+    return true;
 }

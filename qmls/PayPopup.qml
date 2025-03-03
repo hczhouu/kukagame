@@ -19,6 +19,7 @@ Popup {
 
     property int countDown: 0
     property bool wechatSelected: true
+    property bool isBuyVIP: false
 
     width:820 * dpi
     height:590 * dpi
@@ -130,7 +131,7 @@ Popup {
 
         Rectangle {
             id:rectPackage
-            width: 330 * dpi
+            width: 380 * dpi
             height: parent.height
             color: "transparent"
             anchors.left: parent.left
@@ -150,18 +151,45 @@ Popup {
                 label_tips: labelTips
                 showBuyBtn:false
                 remark:goodsRemark
+                visible: !isBuyVIP
             }
+
+            VipPackageItem {
+                id:vippackageItem
+                anchors.top: parent.top
+                anchors.topMargin: 44 * dpi
+                anchors.horizontalCenter: parent.horizontalCenter
+                goods_name: name
+                goods_desc: desc
+                pay_Amount: payAmount
+                order_Amount: orderAmount
+                original_Price: origPrice
+                showLabel: show_Label
+                limit_Time: limTime
+                total_Time: totaTime
+                label_tips: labelTips
+                showBuyBtn:false
+                remark:goodsRemark
+                bkImage: name === "VIP" ? "../res/v2/vip_bk.png": "../res/v2/svip_bk.png"
+                visible: isBuyVIP
+            }
+
 
             Text {
                 id:textTips
-                width: packageItem.width
+                width: isBuyVIP ? vippackageItem.width : packageItem.width
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.top: packageItem.bottom
+                anchors.top: isBuyVIP ? vippackageItem.bottom : packageItem.bottom
                 anchors.topMargin: 30 * dpi
+                //text:"充值须知:
+   // 1.充值成功之日起开始计算有效期，具体有效期以您购买的类型为准。
+   // 2.请在有效期内使用完您的服务时长，过期将自动失效，无法继续使用。
+   // 3.因商品为虚拟产品，请您充值前确认购买的类型是否涵盖了您的使用需求，同时确认充值的账号是否正确，付款成功后不支持权益转换和退款。"
+
                 text:"充值须知:
-    1.充值成功之日起开始计算有效期，具体有效期以您购买的类型为准。
-    2.请在有效期内使用完您的服务时长，过期将自动失效，无法继续使用。
-    3.因商品为虚拟产品，请您充值前确认购买的类型是否涵盖了您的使用需求，同时确认充值的账号是否正确，付款成功后不支持权益转换和退款。"
+虚拟产品充值前请确认相关信息是否正确，付款成功后
+不支持权益转换和退款；有效期从购买日开始计算。
+有任何问题加客服微信:whsrcw咨询。"
                 color: "#989CAE"
                 wrapMode: Text.WordWrap
                 font.pixelSize: 13 * dpi

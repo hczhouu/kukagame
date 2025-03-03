@@ -69,6 +69,26 @@ QVariant PeriodListModel::data(const QModelIndex &index, int role) const
     case GOODS_REMARK:{
         return item.value("goodsRemark").toString();
     }
+    case GOODS_BKIMAGE:{
+        if (item.value("goodsName").toString().compare("SVIP") == 0)
+        {
+            return "../res/v2/svip_bk.png";
+        } else if (item.value("goodsName").toString().compare("VIP") == 0) {
+            return "../res/v2/vip_bk.png";
+        }
+
+        return "../res/v2/vip_bk.png";
+    }
+    case GOODS_FONT_COLOR:{
+        if (item.value("goodsName").toString().compare("SVIP") == 0)
+        {
+            return "#967F69";
+        } else if (item.value("goodsName").toString().compare("VIP") == 0) {
+            return "#5B6989";
+        }
+
+        return "#5B6989";
+    }
     default:
         break;
     }
@@ -93,6 +113,8 @@ QHash<int,QByteArray> PeriodListModel::roleNames() const
     rolesHash.insert(GOODS_LABEL, "goodsLabel");
     rolesHash.insert(GOODS_TYPE, "type");
     rolesHash.insert(GOODS_REMARK, "goodsRemark");
+    rolesHash.insert(GOODS_BKIMAGE, "goodsBkimage");
+    rolesHash.insert(GOODS_FONT_COLOR, "goodsFontColor");
     return rolesHash;
 }
 

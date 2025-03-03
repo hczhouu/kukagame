@@ -200,6 +200,8 @@ private:
     QString m_strFilePackUrl;
     QString m_verMessage;
     QString m_vipFlags;
+    QString m_vipLabel;
+
 
     QScreen* m_desktop;
     double m_screenDpi;
@@ -296,6 +298,8 @@ public:
 
     //获取下载进度
     Q_INVOKABLE QVariant getDownPercent();
+
+    Q_INVOKABLE bool verifyCanBuyVip(const QVariant& goodsName);
 
     Q_INVOKABLE void updateCloseSettings(bool closeExit);
     Q_INVOKABLE void updateNoNotifySettings(bool noNotify);

@@ -204,6 +204,7 @@ Rectangle {
                 payPop.limTime =  limit_Time
                 payPop.desc = goods_desc
                 payPop.goodsRemark = remark
+                payPop.isBuyVIP = false
                 payPop.open()
             }
         }

@@ -57,5 +57,6 @@
         <file alias="qmls/AllGamesPage.qml">qmls/AllGamesPage.qml</file>
         <file alias="qmls/SignRewardPopup.qml">qmls/SignRewardPopup.qml</file>
         <file alias="qmls/CustomerPopup.qml">qmls/CustomerPopup.qml</file>
+        <file alias="qmls/VipPackageItem.qml">qmls/VipPackageItem.qml</file>
     </qresource>
 </RCC>

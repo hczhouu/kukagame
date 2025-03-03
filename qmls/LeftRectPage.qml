@@ -120,11 +120,11 @@ Rectangle {
             }
 
             //V2隐藏
-            ListElement {
-                name:"游戏商城";
-                icon_path:"../res/v2/gameshop.png"
-                icon_path_sel:"../res/v2/gameshop_sel.png"
-            }
+            // ListElement {
+            //     name:"游戏商城";
+            //     icon_path:"../res/v2/gameshop.png"
+            //     icon_path_sel:"../res/v2/gameshop_sel.png"
+            // }
 
             ListElement {
                 name:"全部游戏";
@@ -190,16 +190,17 @@ Rectangle {
 
                         if (index === 1 && selIndex !== 1)
                         {
+                            // showSearchInput = true
+                            // showSearchResult = false
+                            // showBackButton = false
+                            // //加载商城轮播图
+                            // HomePage.getGameShopBanner(GameShopBannerModel, GameShopTabModel)
+
                             showSearchInput = true
                             showSearchResult = false
                             showBackButton = false
-                            //加载商城轮播图
-                            HomePage.getGameShopBanner(GameShopBannerModel, GameShopTabModel)
-
-                            // showSearchInput = false
-                            // showSearchResult = false
-                            // showBackButton = false
-                            // HomePage.getAllGameLabel(GameLabelModel)
+                            HomePage.getAllGameLabel(GameLabelModel)
+                            console.log("1   HomePage.getAllGameLabel(GameLabelModel)")
                         } else if (index === 0 && selIndex !== 0) {
                             showSearchInput = true
                             showSearchResult = false
@@ -209,15 +210,17 @@ Rectangle {
                                                    HomeHotGamesTabModel, HomeGoodsTabModel)
                         } else if(index === 2 && selIndex !== 2) {
 
-                            showSearchInput = false
-                            showSearchResult = false
-                            showBackButton = false
-                            HomePage.getAllGameLabel(GameLabelModel)
+                            // showSearchInput = false
+                            // showSearchResult = false
+                            // showBackButton = false
+                            // HomePage.getAllGameLabel(GameLabelModel)
+                            // console.log("2   HomePage.getAllGameLabel(GameLabelModel)")
                         }
 
                         parent.checked = true
                         selIndex = index
                         lastSelIndex = selIndex
+                        console.log("selIndex", selIndex)
                     }
                 }
 
@@ -311,7 +314,7 @@ Rectangle {
                         showSearchInput = true
                         showSearchResult = false
                         showBackButton = false
-                        selIndex = index + 3
+                        selIndex = index + 2
                         lastSelIndex = selIndex
 
                         if(index === 0)
@@ -413,14 +416,14 @@ Rectangle {
 
                         if (index === 1)
                         {
-                            selIndex = index + 5
+                            selIndex = index + 4
                             lastSelIndex = selIndex
                             HttpClient.getGoodsList(1001)
                             //mainWindow.showErrorMsgPopup(true, "暂不支持,请下载手机端App使用此功能")
                         } else if (index === 0 )
                         {
                             //刷新公告消息列表
-                            selIndex = index + 5
+                            selIndex = index + 4
                             lastSelIndex = selIndex
                             MsgCenter.getMsgListByType(0)
                         }

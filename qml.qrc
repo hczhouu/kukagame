@@ -56,5 +56,6 @@
         <file>qmls/AllGamesPage.qml</file>
         <file>qmls/SignRewardPopup.qml</file>
         <file>qmls/CustomerPopup.qml</file>
+        <file>qmls/VipPackageItem.qml</file>
     </qresource>
 </RCC>

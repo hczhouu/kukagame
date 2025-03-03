@@ -340,5 +340,8 @@
         <file>res/v2/icon_refresh.png</file>
         <file>res/newVersion/svip.png</file>
         <file>res/newVersion/vip.png</file>
+        <file>res/v2/svip_bk.png</file>
+        <file>res/v2/vip_bk.png</file>
+        <file>res/v2/buy_btn.png</file>
     </qresource>
 </RCC>

@@ -401,47 +401,131 @@ Item {
                 id:timecardStackLayout
                 anchors.fill: parent
                 currentIndex: tabTitle.currentIndex
-                Repeater {
-                    visible: GoodsListModel.isDataReady
-                    model: [GoodsListModel, PeriodListModel, TimeCardListModel]
-                    delegate: Item {
 
-                        Loading {
-                            anchors.centerIn: parent
-                            visible: !modelData.isDataReady
-                        }
+                //时长
+                Item {
+                    Loading {
+                        anchors.centerIn: parent
+                        visible: !GoodsListModel.isDataReady
+                    }
 
-                        GridView {
-                            anchors.fill: parent
-                            model: modelData
-                            clip: true
-                            cellWidth: parent.width / 3
-                            cellHeight: 214 * dpi
-                            boundsBehavior: Flickable.StopAtBounds
-                            delegate: Rectangle {
-                                width: timecardStackLayout.width / 3
-                                height: 214 * dpi
-                                color: "transparent"
-                                PackageItem {
-                                    anchors.horizontalCenter: parent.horizontalCenter
-                                    goods_id: goodsId
-                                    goods_name: goodsName
-                                    pay_Amount: payAmount
-                                    order_Amount: orderAmount
-                                    original_Price: originalPrice
-                                    limit_Time: timeLimit
-                                    total_Time: totalTime
-                                    meal_Type: mealType
-                                    showLabel: goodsLabel !== ''
-                                    label_tips: goodsLabel
-                                    goods_desc: goodsDesc
-                                    remark: goodsRemark
-                                }
-
+                    GridView {
+                        anchors.fill: parent
+                        model: GoodsListModel
+                        clip: true
+                        cellWidth: parent.width / 3
+                        cellHeight: 214 * dpi
+                        boundsBehavior: Flickable.StopAtBounds
+                        delegate: Rectangle {
+                            width: timecardStackLayout.width / 3
+                            height: 214 * dpi
+                            color: "transparent"
+                            PackageItem {
+                                anchors.horizontalCenter: parent.horizontalCenter
+                                goods_id: goodsId
+                                goods_name: goodsName
+                                pay_Amount: payAmount
+                                order_Amount: orderAmount
+                                original_Price: originalPrice
+                                limit_Time: timeLimit
+                                total_Time: totalTime
+                                meal_Type: mealType
+                                showLabel: goodsLabel !== ''
+                                label_tips: goodsLabel
+                                goods_desc: goodsDesc
+                                remark: goodsRemark
                             }
+
                         }
                     }
+
                 }
+
+
+                //会员
+                Item {
+                    Loading {
+                        anchors.centerIn: parent
+                        visible: !PeriodListModel.isDataReady
+                    }
+
+                    GridView {
+                        anchors.fill: parent
+                        model: PeriodListModel
+                        clip: true
+                        cellWidth: 390 * dpi
+                        cellHeight: 240 * dpi
+                        boundsBehavior: Flickable.StopAtBounds
+                        anchors.leftMargin: 22 * dpi
+                        delegate: Rectangle {
+                            width: 320 * dpi
+                            height: 240 * dpi
+                            color: "transparent"
+                            VipPackageItem {
+                                anchors.horizontalCenter: parent.horizontalCenter
+                                goods_id: goodsId
+                                goods_name: goodsName
+                                pay_Amount: payAmount
+                                order_Amount: orderAmount
+                                original_Price: originalPrice
+                                limit_Time: timeLimit
+                                total_Time: totalTime
+                                meal_Type: mealType
+                                showLabel: goodsLabel !== ''
+                                label_tips: goodsLabel
+                                goods_desc: goodsDesc
+                                remark: goodsRemark
+                                bkImage:goodsBkimage
+                                fontColor:goodsFontColor
+                            }
+
+                        }
+                    }
+
+                }
+
+
+                // Repeater {
+                //     visible: GoodsListModel.isDataReady
+                //     model: [GoodsListModel, PeriodListModel, TimeCardListModel]
+                //     delegate: Item {
+
+                //         Loading {
+                //             anchors.centerIn: parent
+                //             visible: !modelData.isDataReady
+                //         }
+
+                //         GridView {
+                //             anchors.fill: parent
+                //             model: modelData
+                //             clip: true
+                //             cellWidth: parent.width / 3
+                //             cellHeight: 214 * dpi
+                //             boundsBehavior: Flickable.StopAtBounds
+                //             delegate: Rectangle {
+                //                 width: timecardStackLayout.width / 3
+                //                 height: 214 * dpi
+                //                 color: "transparent"
+                //                 PackageItem {
+                //                     anchors.horizontalCenter: parent.horizontalCenter
+                //                     goods_id: goodsId
+                //                     goods_name: goodsName
+                //                     pay_Amount: payAmount
+                //                     order_Amount: orderAmount
+                //                     original_Price: originalPrice
+                //                     limit_Time: timeLimit
+                //                     total_Time: totalTime
+                //                     meal_Type: mealType
+                //                     showLabel: goodsLabel !== ''
+                //                     label_tips: goodsLabel
+                //                     goods_desc: goodsDesc
+                //                     remark: goodsRemark
+                //                 }
+
+                //             }
+                //         }
+                //     }
+                // }
             }
         }
     }

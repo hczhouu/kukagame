@@ -24,7 +24,9 @@ class PeriodListModel : public QAbstractListModel
         GOODS_SORT,
         GOODS_LABEL,
         GOODS_TYPE,
-        GOODS_REMARK
+        GOODS_REMARK,
+        GOODS_BKIMAGE,
+        GOODS_FONT_COLOR
     };
 
     Q_PROPERTY(bool isDataReady MEMBER m_isDataReady NOTIFY isDataReadyChanged FINAL)

@@ -328,7 +328,7 @@ Item {
                                     onClicked: {
                                         //跳转到游戏详情
                                         parent.forceActiveFocus()
-                                        selIndex = 7
+                                        selIndex = 6
                                         showSearchInput = false
                                         showBackButton = true
                                         isAllGamesPageEntry = true

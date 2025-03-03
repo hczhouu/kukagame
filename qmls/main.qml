@@ -166,9 +166,9 @@ Window {
                 }
 
                 //游戏商店
-                GameShopPage {
+                // GameShopPage {
 
-                }
+                // }
 
                 //所有游戏
                 AllGamesPage {

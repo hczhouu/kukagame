@@ -682,6 +682,15 @@ void GameDetails::startStream(qint64 remainTime, const QString& packageName,
     jsonParams.insert("isArchive",true);
     jsonParams.insert("protoData", jsonProtoData);
 
+    //是合伙人
+    if (HttpClient::getInstance()->userIsCopartner() == 1)
+    {
+        jsonParams.insert("priority", 102);
+    } else {
+        jsonParams.insert("priority", 0);
+    }
+
+
     QJsonDocument docJson;
     docJson.setObject(jsonParams);
 

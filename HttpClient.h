@@ -148,6 +148,7 @@ private:
     QString m_strUuid;
     QString m_strToken;
     QString m_strUserId;
+    int m_isCopartner;
 
     int m_actionType;
     bool m_bIsRefresh;
@@ -226,6 +227,7 @@ public:
     int m_screenHeight;
     QString getToken();
     QString getUserId();
+    int userIsCopartner();
     //发起登录请求
     Q_INVOKABLE void userLogin(const QVariant& userName, const QVariant& userPass,
                           const QVariant& verifyCode, bool rememberPass);

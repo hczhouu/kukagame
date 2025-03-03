@@ -44,7 +44,7 @@ Rectangle {
         showSearchInput = true
         showSearchResult = false
         showBackButton = false
-        selIndex = index + 3
+        selIndex = index + 2
         lastSelIndex = selIndex
     }
 
@@ -54,7 +54,7 @@ Rectangle {
         showSearchInput = true
         showSearchResult = false
         showBackButton = false
-        selIndex = index + 5
+        selIndex = index + 4
         lastSelIndex = selIndex
         if (index === 1)
         {

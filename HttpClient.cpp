@@ -42,6 +42,7 @@ HttpClient::HttpClient()
     m_headLogoUrl = "../res/no-head-logo.png";
     m_vipFlags = "";
     m_vipLabel = "";
+    m_payPercent = 1.0;
 
     QSettings settings("HKEY_CURRENT_USER\\SOFTWARE\\kukaGame", QSettings::NativeFormat);
     m_strApiUrl = settings.value("apiUrl").toString();
@@ -866,6 +867,7 @@ void HttpClient::queryWechatOrderStatus()
         if (strStatus == u8"SUCCESS")
         {
             emit closePayPopup();
+            emit showMsgPopup(false, u8"支付成功!");
             refreshClientInfo(false);
         }
 
@@ -943,6 +945,7 @@ void HttpClient::queryAlipayOrderStatus()
         if (strStatus == u8"TRADE_SUCCESS")
         {
             emit closePayPopup();
+            emit showMsgPopup(false, u8"支付成功!");
             refreshClientInfo(false);
         }
 
@@ -1250,7 +1253,7 @@ void HttpClient::parseRefreshClientInfo(const std::string& resp)
 
     //解析用户信息
     QString strsurplusTotal = itemData.value("surplusTotal").toString();
-    QString userId = itemData.value("id").toString();
+    //QString userId = itemData.value("id").toString();
     QString vipInfo = itemData.value("member").toString();
     m_vipLabel = vipInfo;
 
@@ -1268,6 +1271,7 @@ void HttpClient::parseRefreshClientInfo(const std::string& resp)
 
     emit vipFlagsChanged();
     emit payPercentChanged();
+
     //剩余时长
     QString remainDays = "0";
     QString remainHours = "0";
@@ -1386,6 +1390,9 @@ void HttpClient::parseUserInfoReply(const std::string& resp)
     m_userJuniorStatus = itemData.value("juniorStatus").toInt();
     //头像
     m_headLogoUrl = itemData.value("avatar").toString();
+    //是否合伙人
+    m_isCopartner = itemData.value("isCopartner").toInt(0);
+
     if (m_headLogoUrl.indexOf("http") < 0 ||
         m_headLogoUrl.indexOf("https") < 0)
     {
@@ -1440,6 +1447,7 @@ void HttpClient::parseCheckUpdateVersion(const std::string& resp)
     int forceUpdate = itemData.value("forceUpdate").toInt();
     QString strDesc = itemData.value("updateDescription").toString();
     m_strFilePackUrl = itemData.value("updatePackageFileAddress").toString();
+    qDebug() << m_strFilePackUrl;
 
     QStringList newVerList = strVersion.split(".");
     QString cfgPath = QGuiApplication::applicationDirPath() + "/version.ini";
@@ -1661,6 +1669,12 @@ QString HttpClient::getToken()
 QString HttpClient::getUserId()
 {
     return m_strUserId;
+}
+
+
+int HttpClient::userIsCopartner()
+{
+    return m_isCopartner;
 }
 
 

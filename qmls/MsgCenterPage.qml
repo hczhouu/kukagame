@@ -2,7 +2,7 @@
 import QtQuick.Window 2.6
 import QtQuick.Controls 2.6
 import QtQuick.Layouts 1.3
-import QtGraphicalEffects 1.15
+import QtGraphicalEffects 1.0
 import ActivitiesNoticeModel 1.0
 import DynamicNoticeModel 1.0
 import SystemNoticeModel 1.0

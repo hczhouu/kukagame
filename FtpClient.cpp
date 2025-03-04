@@ -1,6 +1,7 @@
 ﻿#include "FtpClient.h"
 #include <QFileInfo>
 #include <QDir>
+#include <QUrl>
 #include <QStandardPaths>
 #include <QDesktopServices>
 #include "CommonFunc.h"

@@ -9,6 +9,7 @@
 #include <QProcess>
 #include <QBuffer>
 #include <QImage>
+#include <QDebug>
 #include <QPixmap>
 #include <QPainter>
 #include "CommonFunc.h"

@@ -1,9 +1,9 @@
-import QtQuick 2.0
-import QtQuick.Controls 2.5
+﻿import QtQuick 2.0
+import QtQuick.Controls 2.12
 import FtpClient 1.0
 
 import DownloadListModel 1.0
-import QtQml.Models 2.15
+import QtQml.Models 2.12
 
 Item {
     //表格内容（不包含表头）

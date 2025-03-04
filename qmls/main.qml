@@ -47,6 +47,7 @@ Window {
     {
         var component = Qt.createComponent(popName);
         var dynamicObject = component.createObject(mainWindow);
+        console.log(dynamicObject, popName)
         dynamicObject.open()
     }
 

@@ -2,7 +2,7 @@
 import QtQuick.Window 2.6
 import QtQuick.Controls 2.6
 import QtQuick.Layouts 1.3
-import QtGraphicalEffects 1.15
+import QtGraphicalEffects 1.0
 import HomePage 1.0
 import GameShopBannerModel 1.0
 import GameShopTabModel 1.0

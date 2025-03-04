@@ -18,6 +18,7 @@
 #include <QIcon>
 #include <QUuid>
 #include <QStandardPaths>
+#include <QSslSocket>
 #include <string>
 #include "FtpClient.h"
 #include <DbgHelp.h>
@@ -102,6 +103,8 @@ LONG WINAPI ExceptionFilter(LPEXCEPTION_POINTERS lpExceptionInfo)
 
 int main(int argc, char *argv[])
 {
+    qDebug()<< QSslSocket::sslLibraryBuildVersionString();
+
     QCoreApplication::setOrganizationName("kukaGame");
     QCoreApplication::setApplicationName("kukaStream");
 

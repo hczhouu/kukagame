@@ -1,5 +1,5 @@
-﻿import QtQuick 2.15
-import QtQuick.Controls 2.15
+﻿import QtQuick 2.12
+import QtQuick.Controls 2.12
 
 
 // 强制更新弹窗

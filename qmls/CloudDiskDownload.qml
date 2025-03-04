@@ -1,8 +1,8 @@
-import QtQuick 2.15
-import QtQuick.Window 2.15
-import QtQuick.Controls 2.5
+﻿import QtQuick 2.12
+import QtQuick.Window 2.12
+import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.3
-import QtGraphicalEffects 1.15
+import QtGraphicalEffects 1.0
 import FtpClient 1.0
 
 //云盘正在下载

@@ -1,5 +1,5 @@
 ﻿import QtQuick 2.12
-import QtQuick.Controls 2.5
+import QtQuick.Controls 2.12
 import QtQml.Models 2.3
 
 import FtpClient 1.0

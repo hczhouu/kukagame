@@ -1,8 +1,8 @@
-import QtQuick 2.6
+﻿import QtQuick 2.6
 import QtQuick.Window 2.6
-import QtQuick.Controls 2.6
+import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.3
-import QtGraphicalEffects 1.15
+import QtGraphicalEffects 1.0
 
 import OrderListTableModel 1.0
 import RedeemTableModel 1.0

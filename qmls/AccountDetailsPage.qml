@@ -71,7 +71,8 @@ Item {
                         Image {
                             id: nameIamge
                             anchors.fill: parent
-                            source: HttpClient.headLogoUrl
+                            //source: HttpClient.headLogoUrl
+                            source: "../res/no-head-logo.png"
                             visible: false
                             cache: false
                             asynchronous: true

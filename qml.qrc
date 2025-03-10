@@ -57,5 +57,6 @@
         <file>qmls/SignRewardPopup.qml</file>
         <file>qmls/CustomerPopup.qml</file>
         <file>qmls/VipPackageItem.qml</file>
+        <file>qmls/ServicePopup.qml</file>
     </qresource>
 </RCC>

@@ -29,24 +29,21 @@ Popup {
         target: HttpClient
 
         //修改密码成功
-        function onModifySuccess()
-        {
+        onModifySuccess: {
             loginRect.visible = true
             registerRect.visible = false
             modifyPassRect.visible = false
         }
 
         //注册账号成功
-        function onShowLoginView()
-        {
+        onShowLoginView: {
             loginRect.visible = true
             registerRect.visible = false
             modifyPassRect.visible = false
         }
 
         //登录成功
-        function onLoginSuccess()
-        {
+        onLoginSuccess: {
             loginPopup.close()
             if (selIndex === 7)
             {
@@ -55,9 +52,8 @@ Popup {
         }
 
         //登录错误信息
-        function onShowLoginErrorTips(tips)
-        {
-            errTips.text = tips
+        onShowLoginErrorTips: {
+            errTips.text = errStr
         }
     }
 

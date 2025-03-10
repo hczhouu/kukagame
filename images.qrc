@@ -343,5 +343,8 @@
         <file>res/v2/svip_bk.png</file>
         <file>res/v2/vip_bk.png</file>
         <file>res/v2/buy_btn.png</file>
+        <file>res/v2/contact.png</file>
+        <file>res/v2/service.png</file>
+        <file>res/v2/service_ocr.jpg</file>
     </qresource>
 </RCC>

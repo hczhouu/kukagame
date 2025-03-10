@@ -47,33 +47,28 @@ Window {
     {
         var component = Qt.createComponent(popName);
         var dynamicObject = component.createObject(mainWindow);
-        console.log(dynamicObject, popName)
         dynamicObject.open()
     }
 
     Connections{
         target: HttpClient
-        function onShowMsgPopup(msgType, msgData)
-        {
+        onShowMsgPopup: {
             messagePop.showMessage(msgType, msgData)
         }
 
         //关闭支付页面弹窗
-        function onClosePayPopup()
-        {
+        onClosePayPopup: {
             payPop.close()
         }
 
 
         //强制更新弹窗
-        function onShowForceUpdate()
-        {
+        onShowForceUpdate: {
             showPopup('ForceUpdatePopup.qml')
         }
 
         //公告消息弹窗
-        function onShowNoticeMessage(noticeId)
-        {
+        onShowNoticeMessage: {
             noticeMessagePop.noticeId = noticeId
             noticeMessagePop.open()
         }
@@ -81,16 +76,14 @@ Window {
 
     Connections{
         target: FtpClient
-        function onShowMsgPopup(msgType, msgData)
-        {
+        onShowMsgPopup: {
             messagePop.showMessage(msgType, msgData)
         }
     }
 
     Connections {
         target: SearchResultModel
-        function onShowSearchResult()
-        {
+        onShowSearchResult: {
             showSearchResult = true
         }
     }
@@ -286,7 +279,7 @@ Window {
                         hoverEnabled: true
                         cursorShape: Qt.PointingHandCursor
                         onClicked:  {
-                            selIndex = 7
+                            selIndex = 6
                             showSearchInput = false
                             showSearchResult = false
                             showBackButton = true

@@ -200,7 +200,6 @@ Rectangle {
                             showSearchResult = false
                             showBackButton = false
                             HomePage.getAllGameLabel(GameLabelModel)
-                            console.log("1   HomePage.getAllGameLabel(GameLabelModel)")
                         } else if (index === 0 && selIndex !== 0) {
                             showSearchInput = true
                             showSearchResult = false
@@ -220,7 +219,6 @@ Rectangle {
                         parent.checked = true
                         selIndex = index
                         lastSelIndex = selIndex
-                        console.log("selIndex", selIndex)
                     }
                 }
 
@@ -434,46 +432,98 @@ Rectangle {
     }
 
 
-    Button {
-        width: 220 * dpi
-        height: 60 * dpi
-        anchors.horizontalCenter: parent.horizontalCenter
+
+    Column {
+        id:gpBoxService
+        width: parent.width
         anchors.top: gpBoxMore.bottom
         anchors.topMargin: 20 * dpi
-        background: Rectangle {
-            color: "#222836"
-            radius: 5
+        ListModel {
+            id:listModelService
+            ListElement {
+                name:"智能客服"
+                icon_path:"../res/v2/service.png"
+                icon_path_sel:"../res/v2/service.png"
+            }
 
-            Row {
-                anchors.centerIn: parent
-                spacing: 5 * dpi
-                Image {
-                    source: "../res/v2/QQ.png"
-                    fillMode: Image.PreserveAspectFit
-                    scale: dpi
-                    anchors.verticalCenter: parent.verticalCenter
-                }
-
-                Text {
-                    text:"QQ交流群"
-                    color: "#A4A6AB"
-                    font.pixelSize: 16 * dpi
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+            ListElement {
+                name:"联系我们"
+                icon_path:"../res/v2/contact.png"
+                icon_path_sel:"../res/v2/contact.png"
             }
         }
 
-        MouseArea {
-            anchors.fill: parent
-            hoverEnabled: true
-            cursorShape: Qt.PointingHandCursor
-            onClicked: {
-                //联系我们弹窗
-                showPopup('ContactPopup.qml')
-                showSearchResult = false
+
+        Repeater {
+            id:repeaterService
+            model:listModelService
+            delegate: Button {
+                id:btnService
+                checkable: true
+                checked: false
+                width: 220 * dpi
+                height: 50 * dpi
+                anchors.horizontalCenter: parent.horizontalCenter
+                ButtonGroup.group: btnGroup
+                background: Rectangle {
+                    id:rectService
+                    color: parent.checked ? "#222836" :"transparent"
+                    radius: 5
+                    Row {
+                        spacing: 5 * dpi
+                        anchors.left: parent.left
+                        anchors.leftMargin: 70 * dpi
+                        anchors.verticalCenter: parent.verticalCenter
+                        Rectangle {
+                            width: 22 * dpi
+                            height: 22 * dpi
+                            color: "transparent"
+                            anchors.verticalCenter: parent.verticalCenter
+                            Image {
+                                source: btnService.checked ? icon_path_sel : icon_path
+                                fillMode: Image.PreserveAspectFit
+                                scale: dpi
+                                anchors.centerIn: parent
+                            }
+                        }
+
+                        Text {
+                            text:name
+                            color: btnService.checked ? "white" : "#A4A6AB"
+                            font.pixelSize: 16 * dpi
+                            anchors.verticalCenter: parent.verticalCenter
+                        }
+                    }
+                }
+
+                MouseArea {
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: {
+                        btnService.forceActiveFocus()
+                        if (!userLogined)
+                        {
+                            showPopup('LoginPopup.qml')
+                            return
+                        }
+
+                        parent.checked = true
+                        showSearchInput = true
+                        showSearchResult = false
+                        showBackButton = false
+
+                        if (index === 0)
+                        {
+                            showPopup('ServicePopup.qml')
+                        } else if (index === 1)
+                        {
+                            showPopup('ContactPopup.qml')
+                        }
+                    }
+                }
             }
         }
     }
-
 }
 

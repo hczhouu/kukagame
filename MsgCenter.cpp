@@ -54,7 +54,7 @@ void MsgCenter::getUnReadNum(ActivitiesNoticeModel* atcivitiesModel,
         QString token = HttpClient::getInstance()->getToken();
         if (!CommonFunc::SendHttpRequest(resp, false, url, "", token.toStdString()))
         {
-            LOG(ERROR) << "get unread num error " << resp;
+            //LOG(ERROR) << "get unread num error " << resp;
             //刷新弹窗公告
             getForceNotice();
             return;

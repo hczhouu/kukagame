@@ -72,8 +72,7 @@ Item {
                             id: nameIamge
                             anchors.fill: parent
                             scale: dpi
-                            //source: HttpClient.headLogoUrl
-                            source: "../res/no-head-logo.png"
+                            source: "../res/no-head-logo.jpg"
                             visible: false
                             cache: false
                             asynchronous: true

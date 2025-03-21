@@ -23,7 +23,7 @@ Item {
 
     Connections {
         target: HttpClient
-        function onLoginSuccess()
+        onLoginSuccess:
         {
             //刷新未读消息数量
             MsgCenter.getUnReadNum(ActivitiesNoticeModel,
@@ -33,7 +33,7 @@ Item {
 
     Connections {
         target: MsgCenter
-        function onForcePopupMsg(msgId, msgCaption)
+        onForcePopupMsg:
         {
             var component = Qt.createComponent('ActivitiesNoticePopup.qml');
             var dynamicObject = component.createObject(mainWindow,

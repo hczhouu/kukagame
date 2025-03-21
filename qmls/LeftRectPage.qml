@@ -64,7 +64,7 @@ Rectangle {
 
     Connections {
         target: HomePage
-        function onShowRechargeView()
+        onShowRechargeView:
         {
             if (!userLogined)
             {
@@ -76,7 +76,7 @@ Rectangle {
             selectMorePage(1)
         }
 
-        function onShowContactView()
+        onShowContactView:
         {
             showPopup('CustomerPopup.qml')
             showSearchResult = false
@@ -239,11 +239,11 @@ Rectangle {
                 icon_path:"../res/v2/user_center.png"
                 icon_path_sel:"../res/v2/user_center_sel.png"
             }
-            ListElement {
-                name:"我的云盘"
-                icon_path:"../res/v2/cloud_disk.png"
-                icon_path_sel:"../res/v2/cloud_disk_sel.png"
-            }
+//            ListElement {
+//                name:"我的云盘"
+//                icon_path:"../res/v2/cloud_disk.png"
+//                icon_path_sel:"../res/v2/cloud_disk_sel.png"
+//            }
 
         }
 

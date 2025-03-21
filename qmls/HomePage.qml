@@ -108,11 +108,11 @@ Item {
                                         var dynamicObject = component.createObject(mainWindow,
                                              {"msgId":bannerMsgId, "msgType":msgCaption});
                                         dynamicObject.open()
-                                    } else if(bannerType == 3)
+                                    } else if(bannerType === 3)
                                     {
                                         //打开内部链接
                                         HomePage.showInternalLink(bannerInternalLink)
-                                    } else if(bannerType == 4)
+                                    } else if(bannerType === 4)
                                     {
                                         //打开外部链接
                                         Qt.openUrlExternally(bannerExternalLink)

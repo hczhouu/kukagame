@@ -12,8 +12,7 @@ import GameDetails 1.0
 Item {
     Connections {
         target: GameLabelModel
-        function onGetDataSuccess()
-        {
+        onGetDataSuccess:{
             loadingLabel.visible = false
             loaderLabelList.sourceComponent = compLabelList
         }
@@ -21,8 +20,7 @@ Item {
 
     Connections {
         target: GameLabelListModel
-        function onGetDataSuccess()
-        {
+        onGetDataSuccess:{
             loadingGameList.visible = false
             if (GameLabelListModel.rowCount() > 0)
             {

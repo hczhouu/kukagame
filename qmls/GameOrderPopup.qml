@@ -17,8 +17,7 @@ Popup {
     Connections {
         target: GameDetails
         //获取订单详情成功
-        function onGetOrderDetailSuccess()
-        {
+        onGetOrderDetailSuccess:{
             showLoading = false
         }
     }

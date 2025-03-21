@@ -346,5 +346,6 @@
         <file>res/v2/contact.png</file>
         <file>res/v2/service.png</file>
         <file>res/v2/service_ocr.jpg</file>
+        <file>res/no-head-logo.jpg</file>
     </qresource>
 </RCC>

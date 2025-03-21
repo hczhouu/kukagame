@@ -1447,8 +1447,7 @@ void HttpClient::parseCheckUpdateVersion(const std::string& resp)
     QString strVersion = itemData.value("version").toString();
     int forceUpdate = itemData.value("forceUpdate").toInt();
     QString strDesc = itemData.value("updateDescription").toString();
-    m_strFilePackUrl = itemData.value("updatePackageFileAddress").toString();
-    qDebug() << m_strFilePackUrl;
+    m_strFilePackUrl = itemData.value("updatePackageFileAddress").toString();;
 
     QStringList newVerList = strVersion.split(".");
     QString cfgPath = QGuiApplication::applicationDirPath() + "/version.ini";

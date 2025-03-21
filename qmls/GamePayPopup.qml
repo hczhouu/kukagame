@@ -59,8 +59,7 @@ Popup {
 
     Connections {
         target: GameDetails
-        function onClosePayPopup(orderSn)
-        {
+        onClosePayPopup:{
             gamePayPopup.close()
             gamePaySuccPop.gameMainImage = gameIcon
             gamePaySuccPop.gameName = gameName
@@ -72,7 +71,7 @@ Popup {
         }
 
         //创建订单
-        function onCreateOrderStatus(status)
+        onCreateOrderStatus:
         {
             if (!status)
             {

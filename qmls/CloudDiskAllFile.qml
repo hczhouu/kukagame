@@ -14,7 +14,7 @@ Item {
     Connections {
         target: HttpClient
         //登录成功
-        function onLoginSuccess()
+        onLoginSuccess:
         {
             FtpClient.loginSrv()
         }

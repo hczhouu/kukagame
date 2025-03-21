@@ -103,11 +103,8 @@ LONG WINAPI ExceptionFilter(LPEXCEPTION_POINTERS lpExceptionInfo)
 
 int main(int argc, char *argv[])
 {
-    qDebug()<< QSslSocket::sslLibraryBuildVersionString();
-
     QCoreApplication::setOrganizationName("kukaGame");
     QCoreApplication::setApplicationName("kukaStream");
-
     //初始化日志模块
     QString logDirPath = QFileInfo(QStandardPaths::standardLocations(QStandardPaths::AppDataLocation).
                                     first()).absolutePath();

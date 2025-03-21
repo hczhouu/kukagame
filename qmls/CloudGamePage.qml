@@ -27,8 +27,7 @@ Item {
             session.exec(Screen.virtualX, Screen.virtualY)
         }
 
-        function onQuitStream()
-        {
+        onQuitStream:{
             SdlGamepadKeyNavigation.enable();
             gc();
 
@@ -89,7 +88,7 @@ Item {
 
     Connections {
         target: HttpClient
-        function onBackStartPage()
+        onBackStartPage:
         {
             timerProgress.stop()
             textTips.visible = false
@@ -98,8 +97,7 @@ Item {
             textProgress.text = "立即启动"
         }
 
-        function onUpdateRemainTimes(days, hours, mins)
-        {
+        onUpdateRemainTimes:{
             var msg = "%1天%2时%3分"
             remainTime = msg.arg(days).arg(hours).arg(mins)
         }

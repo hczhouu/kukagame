@@ -25,7 +25,7 @@ Item {
     Connections {
         target: GameDetails
         //获取游戏详情页成功
-        function onGetGameSkuSuccess(success)
+        onGetGameSkuSuccess:
         {
             showLoading = !success
             if (!success)

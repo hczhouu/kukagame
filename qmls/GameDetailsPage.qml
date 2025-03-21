@@ -14,8 +14,7 @@ Item {
     property bool showLoading: true
     Connections {
         target: GameDetails
-        function onGetGameDetailsSuccess()
-        {
+        onGetGameDetailsSuccess:{
             showLoading = false
         }
     }

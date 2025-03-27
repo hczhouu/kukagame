@@ -237,6 +237,7 @@ Popup {
                                 fillMode: Image.PreserveAspectFit
                                 anchors.centerIn: parent
                                 cache: true
+                                scale: 0.95 * dpi
                             }
 
                             Loading {

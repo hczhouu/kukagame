@@ -11,6 +11,7 @@
 #include <QClipboard>
 #include <QPainter>
 #include <QProcess>
+#include <QDebug>
 #include "CommonDefine.h"
 #include "sa_sdk/sensors_analytics_sdk.h"
 
@@ -634,7 +635,49 @@ void GameDetails::queryUserRemainTime()
             return;
         }
 
-        startStream(remainTime, m_packageName, m_gameChannel);
+        //获取token
+        std::string urlToken = CommonFunc::GetBaseUrl().toStdString();
+        urlToken.append("app/haima/getCtoken");
+        resp.clear();
+        QJsonObject postData;
+        postData.insert("pkgName", m_packageName);
+        postData.insert("userId", HttpClient::getInstance()->getUserId());
+        QJsonDocument postJson;
+        postJson.setObject(postData);
+        if (!CommonFunc::SendHttpRequest(resp, true, urlToken,
+                                         postJson.toJson().toStdString(), token.toStdString()))
+        {
+            if (HttpClient::getInstance() != nullptr)
+            {
+                emit HttpClient::getInstance()->showMsgPopup(true, u8"获取游戏Token失败[25002]");
+            }
+
+            return;
+        }
+
+        QByteArray strBufToken = QByteArray::fromStdString(resp);
+        QJsonParseError jsonErrorToken;
+        QJsonDocument docParseJsonToken = QJsonDocument::fromJson(strBufToken, &jsonErrorToken);
+        if (docParseJsonToken.isNull()  || (jsonErrorToken.error != QJsonParseError::NoError)) {
+            return;
+        }
+
+        QJsonObject objectTemp = docParseJsonToken.object();
+        if(!objectTemp.contains("data")) {
+            return ;
+        }
+
+
+        QJsonObject objToken = objectTemp.value("data").toObject();
+        qDebug() << QString::fromStdString(resp);
+        QString strToken = objToken.value("ctoken").toString();
+        qint64 playTime = QString::number(objToken.value("playTime").toDouble(), 'f', 0).toLongLong();
+        QString bid = objToken.value("bid").toString();
+
+        qDebug() << strToken << playTime << bid;
+
+
+        startStream(remainTime, m_packageName, m_gameChannel, strToken, playTime, bid);
 
     }).detach();
 }
@@ -642,8 +685,9 @@ void GameDetails::queryUserRemainTime()
 
 //启动游戏
 void GameDetails::startStream(qint64 remainTime, const QString& packageName,
-                                 const QString& gameChannel)
+                                 const QString& gameChannel, const QString& ctoken, qint64 playtime, const QString& bid)
 {
+
     QJsonObject jsonParams;
     QJsonObject jsonProtoData;
     QString userId = HttpClient::getInstance()->getUserId();
@@ -682,6 +726,10 @@ void GameDetails::startStream(qint64 remainTime, const QString& packageName,
     jsonParams.insert("isArchive",true);
     jsonParams.insert("protoData", jsonProtoData);
 
+    jsonParams.insert("cToken", ctoken);
+    jsonParams.insert("playTime", playtime);
+    jsonParams.insert("bid", bid);
+
     //是合伙人
     if (HttpClient::getInstance()->userIsCopartner() == 1)
     {
@@ -693,7 +741,6 @@ void GameDetails::startStream(qint64 remainTime, const QString& packageName,
 
     QJsonDocument docJson;
     docJson.setObject(jsonParams);
-
     QByteArray rawData = docJson.toJson(QJsonDocument::Compact);
     // "730o458@#5A>!2.="
     QString binPath =  QCoreApplication::applicationDirPath() + "/stream/kukastream.exe";

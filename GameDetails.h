@@ -88,7 +88,7 @@ public:
     Q_INVOKABLE void closeOrder();
     Q_INVOKABLE void getOrderDetail(const QString& orderSn, CDKeyListModel* cdKeyModel);
     Q_INVOKABLE void startStream(qint64 remainTime, const QString& packageName,
-                                 const QString& gameChannel);
+                                 const QString& gameChannel, const QString& ctoken, qint64 playtime, const QString& bid);
     Q_INVOKABLE void queryUserRemainTime();
     Q_INVOKABLE void copyCdKey(const QString& cdKey);
     Q_INVOKABLE void appointmentGame();

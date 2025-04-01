@@ -669,13 +669,9 @@ void GameDetails::queryUserRemainTime()
 
 
         QJsonObject objToken = objectTemp.value("data").toObject();
-        qDebug() << QString::fromStdString(resp);
         QString strToken = objToken.value("ctoken").toString();
         qint64 playTime = QString::number(objToken.value("playTime").toDouble(), 'f', 0).toLongLong();
         QString bid = objToken.value("bid").toString();
-
-        qDebug() << strToken << playTime << bid;
-
         startStream(remainTime, m_packageName, m_gameChannel, strToken, playTime, bid);
 
     }).detach();

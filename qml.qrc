@@ -32,7 +32,6 @@
         <file>qmls/YoungModePopup.qml</file>
         <file>qmls/HomePage.qml</file>
         <file>qmls/GameShopPage.qml</file>
-        <file>qmls/CloudGamePage.qml</file>
         <file>qmls/UserCenterPage.qml</file>
         <file>qmls/CloudDiskPage.qml</file>
         <file>qmls/PlayHistoryPage.qml</file>

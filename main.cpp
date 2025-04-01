@@ -388,7 +388,5 @@ int main(int argc, char *argv[])
 
     int retCode = app.exec();
     QThreadPool::globalInstance()->waitForDone(5000);
-    //sensors_analytics::Sdk::Track("kukaGame");
-    //sensors_analytics::Sdk::Shutdown();
     return retCode;
 }

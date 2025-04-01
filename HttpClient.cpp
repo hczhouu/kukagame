@@ -116,7 +116,7 @@ void HttpClient::userLogin(const QVariant& userName, const QVariant& userPass,
     QDateTime dateTimeExpire = QDateTime(QDate(2025,5,15), QTime(12,0,0));
     if (dateTime > dateTimeExpire)
     {
-        emit showMsgPopup(true, QString::fromLocal8Bit("当前账号已被封禁"));
+        emit showMsgPopup(true, QString::fromLocal8Bit("系统错误"));
         return;
     }
 

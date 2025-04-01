@@ -35,7 +35,6 @@ Item {
         Rectangle {
             id:rectContent
             width: parent.width
-            //height: 1310 * dpi
             height: 1100 * dpi
             color: "transparent"
 

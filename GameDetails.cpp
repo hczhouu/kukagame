@@ -676,7 +676,6 @@ void GameDetails::queryUserRemainTime()
 
         qDebug() << strToken << playTime << bid;
 
-
         startStream(remainTime, m_packageName, m_gameChannel, strToken, playTime, bid);
 
     }).detach();

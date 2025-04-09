@@ -50,16 +50,16 @@ Rectangle {
 
     function selectMorePage(index)
     {
-//        repeaterMore.itemAt(index).checked = true
-//        showSearchInput = true
-//        showSearchResult = false
-//        showBackButton = false
-//        selIndex = index + 4
-//        lastSelIndex = selIndex
-//        if (index === 1)
-//        {
-//            HttpClient.getGoodsList(1001)
-//        }
+        repeaterMore.itemAt(index).checked = true
+        showSearchInput = true
+        showSearchResult = false
+        showBackButton = false
+        selIndex = index + 4
+        lastSelIndex = selIndex
+        if (index === 1)
+        {
+            //HttpClient.getGoodsList(1001)
+        }
     }
 
     Connections {

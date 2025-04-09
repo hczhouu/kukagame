@@ -50,30 +50,30 @@ Rectangle {
 
     function selectMorePage(index)
     {
-        repeaterMore.itemAt(index).checked = true
-        showSearchInput = true
-        showSearchResult = false
-        showBackButton = false
-        selIndex = index + 4
-        lastSelIndex = selIndex
-        if (index === 1)
-        {
-            HttpClient.getGoodsList(1001)
-        }
+//        repeaterMore.itemAt(index).checked = true
+//        showSearchInput = true
+//        showSearchResult = false
+//        showBackButton = false
+//        selIndex = index + 4
+//        lastSelIndex = selIndex
+//        if (index === 1)
+//        {
+//            HttpClient.getGoodsList(1001)
+//        }
     }
 
     Connections {
         target: HomePage
         onShowRechargeView:
         {
-            if (!userLogined)
-            {
-                showPopup("LoginPopup.qml")
-                return
-            }
+//            if (!userLogined)
+//            {
+//                showPopup("LoginPopup.qml")
+//                return
+//            }
 
-            HttpClient.getGoodsList(1001)
-            selectMorePage(1)
+//            HttpClient.getGoodsList(1001)
+//            selectMorePage(1)
         }
 
         onShowContactView:
@@ -338,11 +338,11 @@ Rectangle {
                 icon_path_sel:"../res/v2/msg_center_sel.png"
             }
 
-            ListElement {
-                name:"充值中心"
-                icon_path:"../res/v2/recharge_center.png"
-                icon_path_sel:"../res/v2/recharge_center_sel.png"
-            }
+//            ListElement {
+//                name:"充值中心"
+//                icon_path:"../res/v2/recharge_center.png"
+//                icon_path_sel:"../res/v2/recharge_center_sel.png"
+//            }
         }
 
         Text {
@@ -414,9 +414,9 @@ Rectangle {
 
                         if (index === 1)
                         {
-                            selIndex = index + 4
-                            lastSelIndex = selIndex
-                            HttpClient.getGoodsList(1001)
+//                            selIndex = index + 4
+//                            lastSelIndex = selIndex
+//                            HttpClient.getGoodsList(1001)
                             //mainWindow.showErrorMsgPopup(true, "暂不支持,请下载手机端App使用此功能")
                         } else if (index === 0 )
                         {
@@ -523,6 +523,27 @@ Rectangle {
                     }
                 }
             }
+        }
+    }
+
+
+    Column {
+        spacing: 10
+        anchors.top: gpBoxService.bottom
+        anchors.topMargin: 20
+        anchors.horizontalCenter: gpBoxService.horizontalCenter
+        Image {
+            source: "../res/v2/kuka_ocr.png"
+            fillMode: Image.PreserveAspectFit
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
+
+
+        Text {
+            text: "进入酷卡会购买会员"
+            font.pixelSize: 15
+            color: "white"
+            anchors.horizontalCenter: parent.horizontalCenter
         }
     }
 }

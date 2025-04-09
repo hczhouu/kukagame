@@ -111,14 +111,13 @@ void HttpClient::userLogin(const QVariant& userName, const QVariant& userPass,
     m_strUserName = userName.toString();
     m_strUserPass = userPass.toString();
 
-
-    QDateTime dateTime = QDateTime::currentDateTime();
-    QDateTime dateTimeExpire = QDateTime(QDate(2025,5,15), QTime(12,0,0));
-    if (dateTime > dateTimeExpire)
-    {
-        emit showMsgPopup(true, QString::fromLocal8Bit("系统错误"));
-        return;
-    }
+//    QDateTime dateTime = QDateTime::currentDateTime();
+//    QDateTime dateTimeExpire = QDateTime(QDate(2025,5,15), QTime(12,0,0));
+//    if (dateTime > dateTimeExpire)
+//    {
+//        emit showMsgPopup(true, QString::fromLocal8Bit("系统错误"));
+//        return;
+//    }
 
     std::thread([=](){
 

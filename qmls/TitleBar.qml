@@ -292,7 +292,7 @@ Rectangle {
         id:btnAccount
         width:30 * dpi
         height:30 * dpi
-        anchors.right: iconVip.left
+        anchors.right: rectSettings.left
         anchors.rightMargin: 15 * dpi
         anchors.verticalCenter: parent.verticalCenter
         background: Rectangle {
@@ -341,16 +341,15 @@ Rectangle {
 
 
     //会员标识
-    Image {
-        id:iconVip
-        //source: "../res/newVersion/svip.png"
-        source: HttpClient.vipFlags
-        fillMode: Image.PreserveAspectFit
-        scale: dpi
-        anchors.right: rectSettings.left
-        anchors.rightMargin: 20 * dpi
-        anchors.verticalCenter: rectSettings.verticalCenter
-    }
+//    Image {
+//        id:iconVip
+//        source: HttpClient.vipFlags
+//        fillMode: Image.PreserveAspectFit
+//        scale: dpi
+//        anchors.right: rectSettings.left
+//        anchors.rightMargin: 20 * dpi
+//        anchors.verticalCenter: rectSettings.verticalCenter
+//    }
 
 
     //菜单

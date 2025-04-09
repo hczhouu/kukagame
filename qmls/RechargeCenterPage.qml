@@ -364,15 +364,15 @@ Item {
                             hoverEnabled: true
                             cursorShape: Qt.PointingHandCursor
                             onClicked: {
-                                tabbtnTime.checked = true
-                                showSearchResult = false
-                                parent.forceActiveFocus()
-                                if (index === 0)
-                                {
-                                    HttpClient.getGoodsList(1001)
-                                } else if(index === 1) {
-                                    HttpClient.getGoodsList(1002)
-                                }
+//                                tabbtnTime.checked = true
+//                                showSearchResult = false
+//                                parent.forceActiveFocus()
+//                                if (index === 0)
+//                                {
+//                                    HttpClient.getGoodsList(1001)
+//                                } else if(index === 1) {
+//                                    HttpClient.getGoodsList(1002)
+//                                }
                             }
                         }
 

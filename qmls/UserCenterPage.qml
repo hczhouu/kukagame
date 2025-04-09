@@ -124,93 +124,94 @@ Item {
             }
 
 
-            Rectangle {
-                id:rectPrivileged
-                width: 320 * dpi
-                height: 90 * dpi
-                color: "#222733"
-                radius: 10
-                border.width: 1
-                border.color: "#2B303C"
-                anchors.right: rectTry.left
-                anchors.rightMargin: 30 * dpi
-                anchors.verticalCenter: parent.verticalCenter
+//            Rectangle {
+//                id:rectPrivileged
+//                width: 320 * dpi
+//                height: 90 * dpi
+//                color: "#222733"
+//                visible: false
+//                radius: 10
+//                border.width: 1
+//                border.color: "#2B303C"
+//                anchors.right: rectTry.left
+//                anchors.rightMargin: 30 * dpi
+//                anchors.verticalCenter: parent.verticalCenter
 
-                Image {
-                    id:imageIconPrivi
-                    source: "../res/v2/privileged_01.png"
-                    fillMode: Image.PreserveAspectFit
-                    scale: dpi
-                    anchors.left: parent.left
-                    anchors.leftMargin: 24 * dpi
-                    anchors.verticalCenter: parent.verticalCenter
-                }
-
-
-                Rectangle {
-                    id:rectSplit
-                    width: 1
-                    height: 69 * dpi
-                    color: "#2B303C"
-                    anchors.left: imageIconPrivi.right
-                    anchors.leftMargin: 21 * dpi
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+//                Image {
+//                    id:imageIconPrivi
+//                    source: "../res/v2/privileged_01.png"
+//                    fillMode: Image.PreserveAspectFit
+//                    scale: dpi
+//                    anchors.left: parent.left
+//                    anchors.leftMargin: 24 * dpi
+//                    anchors.verticalCenter: parent.verticalCenter
+//                }
 
 
-                Rectangle {
-                    width: 130 * dpi
-                    height: parent.height
-                    color: "transparent"
-                    anchors.left: rectSplit.right
-                    anchors.leftMargin: 25 * dpi
-                    Column {
-                        anchors.centerIn: parent
-                        Text {
-                            width: parent.parent.width
-                            text:"尊享时长"
-                            font.pixelSize: 16 * dpi
-                            color: "white"
-                            elide: Text.ElideRight
-                        }
+//                Rectangle {
+//                    id:rectSplit
+//                    width: 1
+//                    height: 69 * dpi
+//                    color: "#2B303C"
+//                    anchors.left: imageIconPrivi.right
+//                    anchors.leftMargin: 21 * dpi
+//                    anchors.verticalCenter: parent.verticalCenter
+//                }
 
-                        Text {
-                            width: parent.parent.width
-                            text:HttpClient.remainPayTime
-                            font.pixelSize: 14 * dpi
-                            color: "#A4A6AB"
-                            elide: Text.ElideRight
-                        }
-                    }
-                }
 
-                //购买  V2隐藏
-                Rectangle {
-                    width: 60 * dpi
-                    height: 34 * dpi
-                    color: "#2D3443"
-                    radius: 30
-                    anchors.right: parent.right
-                    anchors.rightMargin: 14 * dpi
-                    anchors.verticalCenter: parent.verticalCenter
-                    Text {
-                        text:"购买"
-                        font.pixelSize: 12 * dpi
-                        color: "#A4A6AB"
-                        anchors.centerIn: parent
-                    }
+//                Rectangle {
+//                    width: 130 * dpi
+//                    height: parent.height
+//                    color: "transparent"
+//                    anchors.left: rectSplit.right
+//                    anchors.leftMargin: 25 * dpi
+//                    Column {
+//                        anchors.centerIn: parent
+//                        Text {
+//                            width: parent.parent.width
+//                            text:"尊享时长"
+//                            font.pixelSize: 16 * dpi
+//                            color: "white"
+//                            elide: Text.ElideRight
+//                        }
 
-                    MouseArea {
-                        anchors.fill: parent
-                        hoverEnabled: true
-                        cursorShape: Qt.PointingHandCursor
-                        onClicked: {
-                            parent.forceActiveFocus()
-                            rectLeft.selectMorePage(1);
-                        }
-                    }
-                }
-            }
+//                        Text {
+//                            width: parent.parent.width
+//                            text:HttpClient.remainPayTime
+//                            font.pixelSize: 14 * dpi
+//                            color: "#A4A6AB"
+//                            elide: Text.ElideRight
+//                        }
+//                    }
+//                }
+
+//                //购买  V2隐藏
+//                Rectangle {
+//                    width: 60 * dpi
+//                    height: 34 * dpi
+//                    color: "#2D3443"
+//                    radius: 30
+//                    anchors.right: parent.right
+//                    anchors.rightMargin: 14 * dpi
+//                    anchors.verticalCenter: parent.verticalCenter
+//                    Text {
+//                        text:"购买"
+//                        font.pixelSize: 12 * dpi
+//                        color: "#A4A6AB"
+//                        anchors.centerIn: parent
+//                    }
+
+//                    MouseArea {
+//                        anchors.fill: parent
+//                        hoverEnabled: true
+//                        cursorShape: Qt.PointingHandCursor
+//                        onClicked: {
+//                            parent.forceActiveFocus()
+//                            rectLeft.selectMorePage(1);
+//                        }
+//                    }
+//                }
+//            }
 
             Rectangle {
                 id:rectTry

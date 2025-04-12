@@ -199,11 +199,11 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("HttpClient", pClient.get());
     engine.setNetworkAccessManagerFactory(new NetworkAccessManagerFactory());
 
-    qmlRegisterSingletonType<FtpClient>("FtpClient", 1, 0,
-                                            "FtpClient",
-                                            [](QQmlEngine*, QJSEngine*) -> QObject* {
-                                                return new FtpClient();
-                                            });
+//    qmlRegisterSingletonType<FtpClient>("FtpClient", 1, 0,
+//                                            "FtpClient",
+//                                            [](QQmlEngine*, QJSEngine*) -> QObject* {
+//                                                return new FtpClient();
+//                                            });
 
     qmlRegisterSingletonType<HomePage>("HomePage", 1, 0,
                                         "HomePage",

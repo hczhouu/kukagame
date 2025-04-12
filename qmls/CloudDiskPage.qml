@@ -4,7 +4,7 @@ import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.3
 import QtGraphicalEffects 1.0
 
-import FtpClient 1.0
+//import FtpClient 1.0
 import Qt.labs.platform 1.1
 import TransferCompleteListModel 1.0
 

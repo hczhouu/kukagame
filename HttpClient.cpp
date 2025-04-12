@@ -152,10 +152,10 @@ void HttpClient::userLogin(const QVariant& userName, const QVariant& userPass,
         }
 
         //登录成功
-        if (FtpClient::ftpClient != nullptr)
-        {
-            FtpClient::ftpClient->setConnectionParams(m_strUserName, m_strUserPass);
-        }
+//        if (FtpClient::ftpClient != nullptr)
+//        {
+//            FtpClient::ftpClient->setConnectionParams(m_strUserName, m_strUserPass);
+//        }
 
         m_strToken = "token:" + strMsg;
         m_bUserLogined = true;

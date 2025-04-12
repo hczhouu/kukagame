@@ -54,7 +54,7 @@ Rectangle {
         showSearchInput = true
         showSearchResult = false
         showBackButton = false
-        selIndex = index + 4
+        selIndex = index + 3
         lastSelIndex = selIndex
         if (index === 1)
         {
@@ -421,9 +421,10 @@ Rectangle {
                         } else if (index === 0 )
                         {
                             //刷新公告消息列表
-                            selIndex = index + 4
+                            selIndex = index + 3
                             lastSelIndex = selIndex
                             MsgCenter.getMsgListByType(0)
+                            console.log(index)
                         }
                     }
                 }

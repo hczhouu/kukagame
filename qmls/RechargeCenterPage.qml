@@ -4,7 +4,7 @@ import QtQuick.Controls 2.6
 import QtQuick.Layouts 1.3
 import QtGraphicalEffects 1.0
 
-import GoodsListModel 1.0
+//import GoodsListModel 1.0
 import PeriodListModel 1.0
 import TimeCardListModel 1.0
 
@@ -404,40 +404,40 @@ Item {
 
                 //时长
                 Item {
-                    Loading {
-                        anchors.centerIn: parent
-                        visible: !GoodsListModel.isDataReady
-                    }
+//                    Loading {
+//                        anchors.centerIn: parent
+//                        visible: !GoodsListModel.isDataReady
+//                    }
 
-                    GridView {
-                        anchors.fill: parent
-                        model: GoodsListModel
-                        clip: true
-                        cellWidth: parent.width / 3
-                        cellHeight: 214 * dpi
-                        boundsBehavior: Flickable.StopAtBounds
-                        delegate: Rectangle {
-                            width: timecardStackLayout.width / 3
-                            height: 214 * dpi
-                            color: "transparent"
-                            PackageItem {
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                goods_id: goodsId
-                                goods_name: goodsName
-                                pay_Amount: payAmount
-                                order_Amount: orderAmount
-                                original_Price: originalPrice
-                                limit_Time: timeLimit
-                                total_Time: totalTime
-                                meal_Type: mealType
-                                showLabel: goodsLabel !== ''
-                                label_tips: goodsLabel
-                                goods_desc: goodsDesc
-                                remark: goodsRemark
-                            }
+//                    GridView {
+//                        anchors.fill: parent
+//                        model: GoodsListModel
+//                        clip: true
+//                        cellWidth: parent.width / 3
+//                        cellHeight: 214 * dpi
+//                        boundsBehavior: Flickable.StopAtBounds
+//                        delegate: Rectangle {
+//                            width: timecardStackLayout.width / 3
+//                            height: 214 * dpi
+//                            color: "transparent"
+//                            PackageItem {
+//                                anchors.horizontalCenter: parent.horizontalCenter
+//                                goods_id: goodsId
+//                                goods_name: goodsName
+//                                pay_Amount: payAmount
+//                                order_Amount: orderAmount
+//                                original_Price: originalPrice
+//                                limit_Time: timeLimit
+//                                total_Time: totalTime
+//                                meal_Type: mealType
+//                                showLabel: goodsLabel !== ''
+//                                label_tips: goodsLabel
+//                                goods_desc: goodsDesc
+//                                remark: goodsRemark
+//                            }
 
-                        }
-                    }
+//                        }
+//                    }
 
                 }
 

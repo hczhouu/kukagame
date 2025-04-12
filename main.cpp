@@ -224,11 +224,11 @@ int main(int argc, char *argv[])
                                           });
 
 
-    qmlRegisterSingletonType<GoodsListModel>("GoodsListModel", 1, 0,
-                                             "GoodsListModel",
-                                             [](QQmlEngine*, QJSEngine*) -> QObject* {
-                                                 return new GoodsListModel();
-                                             });
+//    qmlRegisterSingletonType<GoodsListModel>("GoodsListModel", 1, 0,
+//                                             "GoodsListModel",
+//                                             [](QQmlEngine*, QJSEngine*) -> QObject* {
+//                                                 return new GoodsListModel();
+//                                             });
 
     qmlRegisterSingletonType<PeriodListModel>("PeriodListModel", 1, 0,
                                              "PeriodListModel",

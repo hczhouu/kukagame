@@ -1224,10 +1224,10 @@ void HttpClient::OnUpdateTimeCard(int type, const QJsonObject& jsonData)
 {
     if (type == 1001)
     {
-        if (GoodsListModel::pGoodsList != nullptr)
-        {
-            GoodsListModel::pGoodsList->updateGoodsList(jsonData.value("data").toArray());
-        }
+//        if (GoodsListModel::pGoodsList != nullptr)
+//        {
+//            GoodsListModel::pGoodsList->updateGoodsList(jsonData.value("data").toArray());
+//        }
     } else if(type == 1002)
     {
         if (PeriodListModel::pPeriodGoodsList != nullptr)

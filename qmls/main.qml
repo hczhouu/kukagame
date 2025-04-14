@@ -185,9 +185,9 @@ Window {
                 }
 
                 //充值中心
-                RechargeCenterPage {
+//                RechargeCenterPage {
 
-                }
+//                }
 
                 //游戏详情页面
                 GameDetailsPage {
@@ -279,7 +279,7 @@ Window {
                         hoverEnabled: true
                         cursorShape: Qt.PointingHandCursor
                         onClicked:  {
-                            selIndex = 6
+                            selIndex = 4
                             showSearchInput = false
                             showSearchResult = false
                             showBackButton = true

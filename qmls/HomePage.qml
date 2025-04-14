@@ -84,7 +84,7 @@ Item {
                                     if (bannerType == 1)
                                     {
                                         //跳转到游戏详情
-                                        selIndex = 6
+                                        selIndex = 4
                                         showSearchInput = false
                                         showBackButton = true
                                         GameDetails.getGameDetailsInfo(bannerAppId, '')
@@ -636,7 +636,7 @@ Item {
                                 hoverEnabled: true
                                 cursorShape: Qt.PointingHandCursor
                                 onClicked: {
-                                    selIndex = 6
+                                    selIndex = 4
                                     showSearchInput = false
                                     showSearchResult = false
                                     showBackButton = true
@@ -800,7 +800,7 @@ Item {
                                 hoverEnabled: true
                                 cursorShape:Qt.PointingHandCursor
                                 onClicked: {
-                                    selIndex = 6
+                                    selIndex = 5
                                     showSearchInput = false
                                     showSearchResult = false
                                     showBackButton = true

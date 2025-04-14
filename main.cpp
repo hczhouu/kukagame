@@ -369,10 +369,10 @@ int main(int argc, char *argv[])
     qmlRegisterType<DurationTableModel>("DurationTableModel",1,0,"DurationTableModel");
     qmlRegisterType<GamesOrderTableModel>("GamesOrderTableModel",1,0,"GamesOrderTableModel");
 
-    qmlRegisterType<AllFilesListModel>("AllFilesListModel",1,0,"AllFilesListModel");
-    qmlRegisterType<DownloadListModel>("DownloadListModel",1,0,"DownloadListModel");
-    qmlRegisterType<UploadListModel>("UploadListModel",1,0,"UploadListModel");
-    qmlRegisterType<TransferCompleteListModel>("TransferCompleteListModel",1,0,"TransferCompleteListModel");
+//    qmlRegisterType<AllFilesListModel>("AllFilesListModel",1,0,"AllFilesListModel");
+//    qmlRegisterType<DownloadListModel>("DownloadListModel",1,0,"DownloadListModel");
+//    qmlRegisterType<UploadListModel>("UploadListModel",1,0,"UploadListModel");
+//    qmlRegisterType<TransferCompleteListModel>("TransferCompleteListModel",1,0,"TransferCompleteListModel");
 
     const QUrl url(QStringLiteral("qrc:/qmls/main.qml"));
     QObject::connect(

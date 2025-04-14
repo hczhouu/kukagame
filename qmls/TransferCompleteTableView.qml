@@ -96,7 +96,7 @@ Item {
         spacing: 1
         focus: true
         currentIndex: -2
-        model: transferCompleteListModel
+        //model: transferCompleteListModel
         delegate: Rectangle {
             width: listView.width
             height: 35 * dpi

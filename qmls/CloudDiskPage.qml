@@ -6,14 +6,14 @@ import QtGraphicalEffects 1.0
 
 //import FtpClient 1.0
 import Qt.labs.platform 1.1
-import TransferCompleteListModel 1.0
+//import TransferCompleteListModel 1.0
 
 //我的云盘页面
 Item {
 
-    TransferCompleteListModel{
-        id:transferCompleteListModel
-    }
+//    TransferCompleteListModel{
+//        id:transferCompleteListModel
+//    }
 
     Rectangle {
         id:rectTabBtn

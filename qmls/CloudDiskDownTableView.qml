@@ -1,8 +1,7 @@
 ﻿import QtQuick 2.0
 import QtQuick.Controls 2.12
-import FtpClient 1.0
-
-import DownloadListModel 1.0
+//import FtpClient 1.0
+//import DownloadListModel 1.0
 import QtQml.Models 2.12
 
 Item {
@@ -15,9 +14,9 @@ Item {
     property int rowCount: listView.count
     property int currIndex: -1
 
-    DownloadListModel{
-        id:downloadListModel
-    }
+//    DownloadListModel{
+//        id:downloadListModel
+//    }
 
     Rectangle {
         id:rectHeader

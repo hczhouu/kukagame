@@ -2,8 +2,8 @@
 import QtQuick.Controls 2.12
 import QtQml.Models 2.3
 
-import FtpClient 1.0
-import UploadListModel 1.0
+//import FtpClient 1.0
+//import UploadListModel 1.0
 
 
 Item {
@@ -17,9 +17,9 @@ Item {
     property int currIndex: -1
 
 
-    UploadListModel{
-        id:uploadListModel
-    }
+//    UploadListModel{
+//        id:uploadListModel
+//    }
 
     Rectangle {
         id:rectHeader

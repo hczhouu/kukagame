@@ -2,8 +2,8 @@
 import QtQuick.Controls 2.12
 import QtQml.Models 2.3
 
-import FtpClient 1.0
-import AllFilesListModel 1.0
+//import FtpClient 1.0
+//import AllFilesListModel 1.0
 
 Item {
     //表格内容（不包含表头）
@@ -48,9 +48,9 @@ Item {
         }
     }
 
-    AllFilesListModel {
-        id:allFileListModel
-    }
+//    AllFilesListModel {
+//        id:allFileListModel
+//    }
 
 
     GridView {

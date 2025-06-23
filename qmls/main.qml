@@ -2,7 +2,6 @@
 import QtQuick.Window 2.3
 import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.3
-//import FtpClient 1.0
 import Qt.labs.platform 1.1
 import SearchResultModel 1.0
 import GameDetails 1.0
@@ -74,12 +73,6 @@ Window {
         }
     }
 
-//    Connections{
-//        target: FtpClient
-//        onShowMsgPopup: {
-//            messagePop.showMessage(msgType, msgData)
-//        }
-//    }
 
     Connections {
         target: SearchResultModel
@@ -107,9 +100,6 @@ Window {
         }
      }
 
-    GamePaySuccessPopup {
-        id:gamePaySuccPop
-    }
 
 
     //关闭提示
@@ -159,11 +149,6 @@ Window {
 
                 }
 
-                //游戏商店
-                // GameShopPage {
-
-                // }
-
                 //所有游戏
                 AllGamesPage {
 
@@ -174,28 +159,15 @@ Window {
 
                 }
 
-                //我的云盘
-//                CloudDiskPage {
-
-//                }
 
                 //消息中心
                 MsgCenterPage {
 
                 }
 
-                //充值中心
-//                RechargeCenterPage {
-
-//                }
 
                 //游戏详情页面
                 GameDetailsPage {
-
-                }
-
-                //游戏SKU页面
-                GameSkuDetailsPage {
 
                 }
             }
@@ -308,15 +280,6 @@ Window {
         id:messagePop
     }
 
-    //游戏商品支付弹窗
-    GamePayPopup {
-        id:gamePayPopup
-    }
-
-    //游戏商品订单弹窗
-    GameOrderPopup {
-        id:gameOrderPopup
-    }
 
     //系统托盘
    SystemTrayIcon {

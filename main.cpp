@@ -310,11 +310,6 @@ int main(int argc, char *argv[])
                                                     return new SearchResultModel();
                                                 });
 
-    qmlRegisterSingletonType<CDKeyListModel>("CDKeyListModel", 1, 0,
-                                                "CDKeyListModel",
-                                                [](QQmlEngine*, QJSEngine*) -> QObject* {
-                                                    return new CDKeyListModel();
-                                                });
 
     qmlRegisterSingletonType<GameDetailsImageModel>("GameDetailsImageModel", 1, 0,
                                              "GameDetailsImageModel",

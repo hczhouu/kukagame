@@ -19,7 +19,6 @@ SOURCES += \
         log/easylogging++.cc \
         main.cpp \
         models/ActivitiesNoticeModel.cpp \
-        models/CDKeyListModel.cpp \
         models/DynamicNoticeModel.cpp \
         models/GameDetailsImageModel.cpp \
         models/GameLabelListModel.cpp \
@@ -41,12 +40,10 @@ SOURCES += \
         models/SigninModel.cpp \
         models/SystemNoticeModel.cpp \
         models/durationtablemodel.cpp \
-        models/goodslistmodel.cpp \
         models/periodlistmodel.cpp \
         models/redeemtablemodel.cpp \
         models/timecardlistmodel.cpp \
         qaesencryption.cpp \
-        qftp.cpp \
         qrencode/bitstream.c \
         qrencode/mask.c \
         qrencode/mmask.c \
@@ -76,7 +73,6 @@ HEADERS += \
     aesni/aesni-key-init.h \
     log/easylogging++.h \
     models/ActivitiesNoticeModel.h \
-    models/CDKeyListModel.h \
     models/DynamicNoticeModel.h \
     models/GameDetailsImageModel.h \
     models/GameLabelListModel.h \
@@ -98,12 +94,10 @@ HEADERS += \
     models/SigninModel.h \
     models/SystemNoticeModel.h \
     models/durationtablemodel.h \
-    models/goodslistmodel.h \
     models/periodlistmodel.h \
     models/redeemtablemodel.h \
     models/timecardlistmodel.h \
     qaesencryption.h \
-    qftp.h \
     qrencode/bitstream.h \
     qrencode/config.h \
     qrencode/mask.h \

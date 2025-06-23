@@ -1,14 +1,9 @@
 ﻿#ifndef COMMONDEFINE_H
 #define COMMONDEFINE_H
 #include <QString>
-
 #include "models/GamesOrderTableModel.h"
 #include "models/redeemtablemodel.h"
 #include "models/durationtablemodel.h"
-#include "models/allfileslistmodel.h"
-#include "models/downloadlistmodel.h"
-#include "models/transfercompletelistmodel.h"
-#include "models/goodslistmodel.h"
 #include "models/OrderListTableModel.h"
 #include "models/periodlistmodel.h"
 #include "models/timecardlistmodel.h"
@@ -28,7 +23,6 @@
 #include "models/DynamicNoticeModel.h"
 #include "models/SystemNoticeModel.h"
 #include "models/SearchResultModel.h"
-#include "models/CDKeyListModel.h"
 #include "models/GameDetailsImageModel.h"
 #include "models/GameLabelModel.h"
 #include "models/GameLabelListModel.h"

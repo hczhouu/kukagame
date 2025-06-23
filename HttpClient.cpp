@@ -41,7 +41,7 @@ HttpClient::HttpClient()
     m_timecardDuration = u8"0天0时0分";
     m_timecardPeriod = u8"0天0时0分";
     m_findNewVersion = false;
-    m_headLogoUrl = "../res/no-head-logo.png";
+    m_headLogoUrl = "../res/newVersion/no-head-logo.png";
     m_vipFlags = "";
     m_vipLabel = "";
     m_payPercent = 1.0;
@@ -1225,10 +1225,7 @@ void HttpClient::OnUpdateTimeCard(int type, const QJsonObject& jsonData)
 {
     if (type == 1001)
     {
-//        if (GoodsListModel::pGoodsList != nullptr)
-//        {
-//            GoodsListModel::pGoodsList->updateGoodsList(jsonData.value("data").toArray());
-//        }
+
     } else if(type == 1002)
     {
         if (PeriodListModel::pPeriodGoodsList != nullptr)
@@ -1407,7 +1404,7 @@ void HttpClient::parseUserInfoReply(const std::string& resp)
     if (m_headLogoUrl.indexOf("http") < 0 ||
         m_headLogoUrl.indexOf("https") < 0)
     {
-        m_headLogoUrl = "../res/no-head-logo.png";
+        m_headLogoUrl = "../res/newVersion/no-head-logo.png";
     }
     //用户名
     m_strUserName = itemData.value("userName").toString();

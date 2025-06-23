@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>res/no-head-logo.png</file>
         <file>res/newVersion/close.png</file>
         <file>res/newVersion/cloud_disk.png</file>
         <file>res/newVersion/logo.png</file>
@@ -346,7 +345,8 @@
         <file>res/v2/contact.png</file>
         <file>res/v2/service.png</file>
         <file>res/v2/service_ocr.jpg</file>
-        <file>res/no-head-logo.jpg</file>
         <file>res/v2/kuka_ocr.png</file>
+        <file>res/newVersion/no-head-logo.jpg</file>
+        <file>res/newVersion/no-head-logo.png</file>
     </qresource>
 </RCC>

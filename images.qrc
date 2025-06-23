@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>res/newVersion/close.png</file>
-        <file>res/newVersion/cloud_disk.png</file>
         <file>res/newVersion/logo.png</file>
         <file>res/newVersion/menu.png</file>
         <file>res/newVersion/min.png</file>
@@ -11,7 +10,6 @@
         <file>res/newVersion/settings.png</file>
         <file>res/newVersion/menu_bk.png</file>
         <file>res/newVersion/shutdown_bk.png</file>
-        <file>res/newVersion/cloud_disk_hover.png</file>
         <file>res/newVersion/icon_bill.png</file>
         <file>res/newVersion/icon_buy_sel.png</file>
         <file>res/newVersion/icon_remaintime.png</file>
@@ -44,38 +42,12 @@
         <file>res/newVersion/text_input_vercode_bk.png</file>
         <file>res/newVersion/sendsms_bk.png</file>
         <file>res/newVersion/icon_vercode.png</file>
-        <file>res/newVersion/icon_download.png</file>
-        <file>res/newVersion/icon_folder.png</file>
-        <file>res/newVersion/icon_upload.png</file>
-        <file>res/newVersion/icon_download_sel.png</file>
-        <file>res/newVersion/icon_upload_sel.png</file>
-        <file>res/newVersion/icon_folder_sel.png</file>
-        <file>res/newVersion/icon_add_folder.png</file>
-        <file>res/newVersion/icon_min_del.png</file>
-        <file>res/newVersion/icon_min_down.png</file>
-        <file>res/newVersion/icon_min_upload.png</file>
         <file>res/newVersion/icon_left_arrow.png</file>
-        <file>res/newVersion/icon_min_refresh.png</file>
         <file>res/newVersion/icon_right_arrow.png</file>
         <file>res/newVersion/icon_cancel.png</file>
-        <file>res/newVersion/icon_start.png</file>
         <file>res/newVersion/icon_checkbox.png</file>
         <file>res/newVersion/icon_checkbox_sel.png</file>
         <file>res/newVersion/addfolder_input.png</file>
-        <file>res/newVersion/icon_folder_min.png</file>
-        <file>res/newVersion/icon_start_min.png</file>
-        <file>res/newVersion/icon_type_folder.png</file>
-        <file>res/newVersion/icon_type_unknow.png</file>
-        <file>res/newVersion/icon_filetype_zip.png</file>
-        <file>res/newVersion/icon_filetype_mp4.png</file>
-        <file>res/newVersion/icon_filetype_mp3.png</file>
-        <file>res/newVersion/icon_filetype_word.png</file>
-        <file>res/newVersion/icon_filetype_txt.png</file>
-        <file>res/newVersion/icon_filetype_pdf.png</file>
-        <file>res/newVersion/icon_filetype_png.png</file>
-        <file>res/newVersion/icon_filetype_xls.png</file>
-        <file>res/newVersion/icon_filetype_ppt.png</file>
-        <file>res/newVersion/icon_filetype_exe.png</file>
         <file>res/newVersion/kuka_text.png</file>
         <file>res/newVersion/main.ico</file>
         <file>res/newVersion/icon_check_sel.png</file>
@@ -85,19 +57,6 @@
         <file>res/newVersion/icon_menu.png</file>
         <file>res/newVersion/icon_min.png</file>
         <file>res/newVersion/icon_close.png</file>
-        <file>res/newVersion/icon_folder_big.png</file>
-        <file>res/newVersion/icon_zip_big.png</file>
-        <file>res/newVersion/icon_unknow_big.png</file>
-        <file>res/newVersion/icon_iso_big.png</file>
-        <file>res/newVersion/icon_txt_big.png</file>
-        <file>res/newVersion/icon_dll_big.png</file>
-        <file>res/newVersion/icon_exe_big.png</file>
-        <file>res/newVersion/icon_pdf_big.png</file>
-        <file>res/newVersion/icon_video_big.png</file>
-        <file>res/newVersion/icon_image_big.png</file>
-        <file>res/newVersion/icon_ppt_big.png</file>
-        <file>res/newVersion/icon_word_big.png</file>
-        <file>res/newVersion/icon_xls_big.png</file>
         <file>res/newVersion/icon_grid.png</file>
         <file>res/newVersion/icon_list.png</file>
         <file>res/newVersion/icon_back.png</file>
@@ -183,12 +142,6 @@
         <file>res/v2/msg_04.png</file>
         <file>res/v2/msg_05.png</file>
         <file>res/v2/msg_06.png</file>
-        <file>res/v2/val_01.png</file>
-        <file>res/v2/val_02.png</file>
-        <file>res/v2/val_03.png</file>
-        <file>res/v2/val_04.png</file>
-        <file>res/v2/val_05.png</file>
-        <file>res/v2/val_06.png</file>
         <file>res/v2/mem_01.png</file>
         <file>res/v2/mem_02.png</file>
         <file>res/v2/mem_03.png</file>
@@ -212,12 +165,6 @@
         <file>res/v2/lev_bk_04.png</file>
         <file>res/v2/lev_bk_05.png</file>
         <file>res/v2/lv_bk.png</file>
-        <file>res/v2/star_01.png</file>
-        <file>res/v2/star_02.png</file>
-        <file>res/v2/star_03.png</file>
-        <file>res/v2/star_04.png</file>
-        <file>res/v2/star_05.png</file>
-        <file>res/v2/star_big.png</file>
         <file>res/v2/spliter_01.png</file>
         <file>res/v2/spliter_02.png</file>
         <file>res/v2/spliter_03.png</file>

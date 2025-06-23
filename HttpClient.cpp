@@ -12,9 +12,10 @@
 #include <QDebug>
 #include <QPixmap>
 #include <QPainter>
+#include <QTimer>
+#include <QDateTime>
 #include "CommonFunc.h"
 #include "CommonDefine.h"
-#include "FtpClient.h"
 #include "curl/curl.h"
 
 extern "C"{

@@ -20,12 +20,10 @@
 #include <QStandardPaths>
 #include <QSslSocket>
 #include <string>
-#include "FtpClient.h"
 #include <DbgHelp.h>
 #include <Shlwapi.h>
 #include <QProcess>
 #include "CommonFunc.h"
-#include "sa_sdk/sensors_analytics_sdk.h"
 #include "NetworkAccessManagerFactory.h"
 
 #define ELPP_QT_LOGGING 1
@@ -168,22 +166,6 @@ int main(int argc, char *argv[])
         instanceId = setting.value("instanceId").toString().toUpper();
     }
 
-    //初始化数据埋点SDK
-    QString binPath = QDir::toNativeSeparators(QGuiApplication::applicationDirPath());
-    const std::string staging_file_path = binPath.toStdString() + "\\staging_file";
-    const std::string server_url = "https://higateway.haishuu.com/ha?project=kukayun&token=ykJ4d1fR";
-    sensors_analytics::Sdk::Init(staging_file_path, server_url, instanceId.toStdString(),
-                                 false, 200);
-
-    sensors_analytics::PropertiesNode event_properties;
-    event_properties.SetString("H_lib", "API");
-    event_properties.SetString("client", "Windows");
-    sensors_analytics::Sdk::Track("H_AppStart", event_properties);
-    std::thread([](){
-         bool flush_result = sensors_analytics::Sdk::Flush();
-         LOG(INFO) << "app start " << flush_result;
-    }).detach();
-
     //设置捕获dump文件
     SetUnhandledExceptionFilter(ExceptionFilter);
 
@@ -199,11 +181,6 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("HttpClient", pClient.get());
     engine.setNetworkAccessManagerFactory(new NetworkAccessManagerFactory());
 
-//    qmlRegisterSingletonType<FtpClient>("FtpClient", 1, 0,
-//                                            "FtpClient",
-//                                            [](QQmlEngine*, QJSEngine*) -> QObject* {
-//                                                return new FtpClient();
-//                                            });
 
     qmlRegisterSingletonType<HomePage>("HomePage", 1, 0,
                                         "HomePage",
@@ -223,12 +200,6 @@ int main(int argc, char *argv[])
                                               return new MsgCenter();
                                           });
 
-
-//    qmlRegisterSingletonType<GoodsListModel>("GoodsListModel", 1, 0,
-//                                             "GoodsListModel",
-//                                             [](QQmlEngine*, QJSEngine*) -> QObject* {
-//                                                 return new GoodsListModel();
-//                                             });
 
     qmlRegisterSingletonType<PeriodListModel>("PeriodListModel", 1, 0,
                                              "PeriodListModel",
@@ -369,10 +340,6 @@ int main(int argc, char *argv[])
     qmlRegisterType<DurationTableModel>("DurationTableModel",1,0,"DurationTableModel");
     qmlRegisterType<GamesOrderTableModel>("GamesOrderTableModel",1,0,"GamesOrderTableModel");
 
-//    qmlRegisterType<AllFilesListModel>("AllFilesListModel",1,0,"AllFilesListModel");
-//    qmlRegisterType<DownloadListModel>("DownloadListModel",1,0,"DownloadListModel");
-//    qmlRegisterType<UploadListModel>("UploadListModel",1,0,"UploadListModel");
-//    qmlRegisterType<TransferCompleteListModel>("TransferCompleteListModel",1,0,"TransferCompleteListModel");
 
     const QUrl url(QStringLiteral("qrc:/qmls/main.qml"));
     QObject::connect(

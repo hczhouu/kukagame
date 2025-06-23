@@ -13,7 +13,6 @@
 #include <QProcess>
 #include <QDebug>
 #include "CommonDefine.h"
-#include "sa_sdk/sensors_analytics_sdk.h"
 
 extern "C"{
 #include "qrencode/qrencode.h"
@@ -43,17 +42,6 @@ void GameDetails::getGameDetailsInfo(const QString& gameId, const QString& goods
         connect(this, &GameDetails::updateDetailsImage, GameDetailsImageModel::detailImage,
                 &GameDetailsImageModel::updateDetailsImage, Qt::UniqueConnection);
     }
-
-    sensors_analytics::PropertiesNode event_properties;
-    event_properties.SetString("H_lib", "API");
-    event_properties.SetString("client", "Windows");
-    event_properties.SetString("itemId", gameId.toStdString());
-    event_properties.SetString("itemPage", "details");
-    sensors_analytics::Sdk::Track("H_AppClick", event_properties);
-    std::thread([](){
-        bool flush_result = sensors_analytics::Sdk::Flush();
-        LOG(INFO) << "report point " << flush_result;
-    }).detach();
 
     std::thread([=](){
         std::string resp;

@@ -11,7 +11,6 @@ QMAKE_PROJECT_DEPTH = 0
 
 SOURCES += \
         CommonFunc.cpp \
-        FtpClient.cpp \
         GameDetails.cpp \
         HomePage.cpp \
         HttpClient.cpp \
@@ -41,15 +40,11 @@ SOURCES += \
         models/SignRewardModel.cpp \
         models/SigninModel.cpp \
         models/SystemNoticeModel.cpp \
-        models/allfileslistmodel.cpp \
-        models/downloadlistmodel.cpp \
         models/durationtablemodel.cpp \
         models/goodslistmodel.cpp \
         models/periodlistmodel.cpp \
         models/redeemtablemodel.cpp \
         models/timecardlistmodel.cpp \
-        models/transfercompletelistmodel.cpp \
-        models/uploadlistmodel.cpp \
         qaesencryption.cpp \
         qftp.cpp \
         qrencode/bitstream.c \
@@ -61,11 +56,7 @@ SOURCES += \
         qrencode/qrinput.c \
         qrencode/qrspec.c \
         qrencode/rsecc.c \
-        qrencode/split.c \
-        qurlinfo.cpp \
-        sa_sdk/sensors_analytics_sdk.cpp \
-        sa_sdk/sensors_network.cpp \
-        sa_sdk/sensors_utils.cpp
+        qrencode/split.c
 
 RESOURCES += qml.qrc \
     images.qrc
@@ -74,7 +65,6 @@ RESOURCES += qml.qrc \
 HEADERS += \
     CommonDefine.h \
     CommonFunc.h \
-    FtpClient.h \
     GameDetails.h \
     HomePage.h \
     HttpClient.h \
@@ -107,15 +97,11 @@ HEADERS += \
     models/SignRewardModel.h \
     models/SigninModel.h \
     models/SystemNoticeModel.h \
-    models/allfileslistmodel.h \
-    models/downloadlistmodel.h \
     models/durationtablemodel.h \
     models/goodslistmodel.h \
     models/periodlistmodel.h \
     models/redeemtablemodel.h \
     models/timecardlistmodel.h \
-    models/transfercompletelistmodel.h \
-    models/uploadlistmodel.h \
     qaesencryption.h \
     qftp.h \
     qrencode/bitstream.h \
@@ -128,11 +114,7 @@ HEADERS += \
     qrencode/qrinput.h \
     qrencode/qrspec.h \
     qrencode/rsecc.h \
-    qrencode/split.h \
-    qurlinfo.h \
-    sa_sdk/sensors_analytics_sdk.h \
-    sa_sdk/sensors_network.h \
-    sa_sdk/sensors_utils.h
+    qrencode/split.h
 
 TARGET = kukaGame
 

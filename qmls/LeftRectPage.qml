@@ -4,8 +4,8 @@ import QtQuick.Controls 2.6
 import QtQuick.Layouts 1.3
 import QtGraphicalEffects 1.0
 import HomePage 1.0
-import GameShopBannerModel 1.0
-import GameShopTabModel 1.0
+//import GameShopBannerModel 1.0
+//import GameShopTabModel 1.0
 import HomeBannerModel 1.0
 import HomeActivitiesModel 1.0
 import HomeHotGamesTabModel 1.0
@@ -190,12 +190,6 @@ Rectangle {
 
                         if (index === 1 && selIndex !== 1)
                         {
-                            // showSearchInput = true
-                            // showSearchResult = false
-                            // showBackButton = false
-                            // //加载商城轮播图
-                            // HomePage.getGameShopBanner(GameShopBannerModel, GameShopTabModel)
-
                             showSearchInput = true
                             showSearchResult = false
                             showBackButton = false

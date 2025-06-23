@@ -262,23 +262,6 @@ int main(int argc, char *argv[])
                                                     return new HomeGoodsModel();
                                                 });
 
-    qmlRegisterSingletonType<GameShopBannerModel>("GameShopBannerModel", 1, 0,
-                                                "GameShopBannerModel",
-                                                [](QQmlEngine*, QJSEngine*) -> QObject* {
-                                                    return new GameShopBannerModel();
-                                                });
-
-    qmlRegisterSingletonType<GameShopTabModel>("GameShopTabModel", 1, 0,
-                                                "GameShopTabModel",
-                                                [](QQmlEngine*, QJSEngine*) -> QObject* {
-                                                    return new GameShopTabModel();
-                                                });
-
-    qmlRegisterSingletonType<GameShopItemModel>("GameShopItemModel", 1, 0,
-                                               "GameShopItemModel",
-                                               [](QQmlEngine*, QJSEngine*) -> QObject* {
-                                                   return new GameShopItemModel();
-                                               });
 
     qmlRegisterSingletonType<GameSkuModel>("GameSkuModel", 1, 0,
                                                "GameSkuModel",

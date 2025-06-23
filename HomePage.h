@@ -11,8 +11,6 @@
 #include "models/HomeActivitiesModel.h"
 #include "models/HomeHotGamesTabModel.h"
 #include "models/HomeGoodsTabModel.h"
-#include "models/GameShopBannerModel.h"
-#include "models/GameShopTabModel.h"
 #include "models/SearchResultModel.h"
 #include "models/GameLabelModel.h"
 #include "models/GameLabelListModel.h"
@@ -78,12 +76,6 @@ public:
     //获取首页轮播图数据
     Q_INVOKABLE void getBannerData(HomeBannerModel* homeBanner, HomeActivitiesModel* activitiesModel,
                                    HomeHotGamesTabModel* tabModel, HomeGoodsTabModel* goodsTabModel);
-
-    //获取商城页面轮播图
-    Q_INVOKABLE void getGameShopBanner(GameShopBannerModel* shopBannerModel, GameShopTabModel* shopTabModel);
-
-    //获取商城页面标签页
-    Q_INVOKABLE void getShopGameItems();
 
     //获取热门推荐和特惠游戏列表
     Q_INVOKABLE void getHotGamesList();

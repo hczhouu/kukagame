@@ -23,9 +23,6 @@ SOURCES += \
         models/GameDetailsImageModel.cpp \
         models/GameLabelListModel.cpp \
         models/GameLabelModel.cpp \
-        models/GameShopBannerModel.cpp \
-        models/GameShopItemModel.cpp \
-        models/GameShopTabModel.cpp \
         models/GameSkuModel.cpp \
         models/GamesOrderTableModel.cpp \
         models/HomeActivitiesModel.cpp \
@@ -77,9 +74,6 @@ HEADERS += \
     models/GameDetailsImageModel.h \
     models/GameLabelListModel.h \
     models/GameLabelModel.h \
-    models/GameShopBannerModel.h \
-    models/GameShopItemModel.h \
-    models/GameShopTabModel.h \
     models/GameSkuModel.h \
     models/GamesOrderTableModel.h \
     models/HomeActivitiesModel.h \

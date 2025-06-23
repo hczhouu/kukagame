@@ -9,8 +9,8 @@ import HomeBannerModel 1.0
 import HomeActivitiesModel 1.0
 import HomeHotGamesTabModel 1.0
 import HomeGoodsTabModel 1.0
-import GameShopBannerModel 1.0
-import GameShopTabModel 1.0
+//import GameShopBannerModel 1.0
+//import GameShopTabModel 1.0
 import SearchResultModel 1.0
 import GameLabelModel 1.0
 
@@ -203,7 +203,7 @@ Rectangle {
                                                HomeHotGamesTabModel, HomeGoodsTabModel)
                     } else if (selIndex === 1)
                     {
-                        HomePage.getGameShopBanner(GameShopBannerModel, GameShopTabModel)
+                        //HomePage.getGameShopBanner(GameShopBannerModel, GameShopTabModel)
                     } else if (selIndex === 2)
                     {
                         HomePage.getAllGameLabel(GameLabelModel)

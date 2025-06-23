@@ -2,15 +2,7 @@
     <qresource prefix="/">
         <file>qmls/About.qml</file>
         <file>qmls/AccountDetailsPage.qml</file>
-        <file>qmls/AddFolderPopup.qml</file>
         <file>qmls/CheckUpdatePopup.qml</file>
-        <file>qmls/CloudDiskAllFile.qml</file>
-        <file>qmls/CloudDiskDownload.qml</file>
-        <file>qmls/CloudDiskDownTableView.qml</file>
-        <file>qmls/CloudDiskTableView.qml</file>
-        <file>qmls/CloudDiskTransferFinished.qml</file>
-        <file>qmls/CloudDiskUpload.qml</file>
-        <file>qmls/CloudDiskUploadTableView.qml</file>
         <file>qmls/ContactPopup.qml</file>
         <file>qmls/ExchangePopup.qml</file>
         <file>qmls/ExitAppTips.qml</file>
@@ -31,10 +23,7 @@
         <file>qmls/ViewPassPopup.qml</file>
         <file>qmls/YoungModePopup.qml</file>
         <file>qmls/HomePage.qml</file>
-        <file>qmls/GameShopPage.qml</file>
         <file>qmls/UserCenterPage.qml</file>
-        <file>qmls/CloudDiskPage.qml</file>
-        <file>qmls/PlayHistoryPage.qml</file>
         <file>qmls/MsgCenterPage.qml</file>
         <file>qmls/IntegralCenterPage.qml</file>
         <file>qmls/RechargeCenterPage.qml</file>
@@ -44,7 +33,6 @@
         <file>qmls/PromoCodePopup.qml</file>
         <file>qmls/GameDetailsPage.qml</file>
         <file>qmls/Loading.qml</file>
-        <file>qmls/GameOrderTableView.qml</file>
         <file>qmls/ActivitiesNoticePopup.qml</file>
         <file>qmls/StartGamePopup.qml</file>
         <file>qmls/AllGamesPage.qml</file>

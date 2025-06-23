@@ -490,7 +490,6 @@ Item {
 
                             Repeater {
                                 model: ["时长订单","应用商品订单"]
-                                //model: ["时长订单"]
                                 delegate: TabButton {
                                     width: 80 * dpi
                                     height: 30 * dpi

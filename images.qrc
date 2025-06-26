@@ -11,7 +11,6 @@
         <file>res/newVersion/vip.png</file>
         <file>res/v2/logo.png</file>
         <file>res/v2/logo_bk.png</file>
-        <file>res/v2/cloud_disk.png</file>
         <file>res/v2/cloudgame.png</file>
         <file>res/v2/homepage.png</file>
         <file>res/v2/msg_center.png</file>
@@ -36,9 +35,6 @@
         <file>res/v2/bk_003.png</file>
         <file>res/v2/settings.png</file>
         <file>res/v2/speed.png</file>
-        <file>res/v2/icon_ative.png</file>
-        <file>res/v2/icon_exchange.png</file>
-        <file>res/v2/icon_game.png</file>
         <file>res/v2/icon_rocket.png</file>
         <file>res/v2/icon_signin.png</file>
         <file>res/v2/icon_timer.png</file>
@@ -49,7 +45,6 @@
         <file>res/v2/orderlist.png</file>
         <file>res/v2/userinfo.png</file>
         <file>res/v2/try_01.png</file>
-        <file>res/v2/icon_finished.png</file>
         <file>res/v2/game_history.png</file>
         <file>res/v2/used_history.png</file>
         <file>res/v2/user_count.png</file>
@@ -70,7 +65,6 @@
         <file>res/v2/card_bk.png</file>
         <file>res/v2/spliter_line.png</file>
         <file>res/v2/lv_bk.png</file>
-        <file>res/v2/cloud_disk_sel.png</file>
         <file>res/v2/cloudgame_sel.png</file>
         <file>res/v2/homepage_sel.png</file>
         <file>res/v2/msg_center_sel.png</file>
@@ -81,7 +75,6 @@
         <file>res/v2/msg_02_sel.png</file>
         <file>res/v2/msg_03_sel.png</file>
         <file>res/v2/msg_sel.png</file>
-        <file>res/v2/icon_finished_sel.png</file>
         <file>res/v2/sign_bk.png</file>
         <file>res/v2/sign_close.png</file>
         <file>res/v2/day_bk.png</file>

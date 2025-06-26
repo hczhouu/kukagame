@@ -714,7 +714,6 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\icon_invite.png \
 		res\v2\login_bk2.png \
 		res\v2\card_bk.png \
-		res\v2\icon_ative.png \
 		res\v2\about_bk.png \
 		res\v2\viewpass_phone.png \
 		res\v2\day_bk_sign_01.png \
@@ -746,7 +745,6 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\check_unsel.png \
 		res\v2\exchange_spliter.png \
 		res\v2\wait.png \
-		res\v2\icon_finished.png \
 		res\v2\cloudgame.png \
 		res\v2\steam.png \
 		res\v2\menu.png \
@@ -757,8 +755,8 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\user_center.png \
 		res\v2\realnameauth_idcard.png \
 		res\v2\startgame_bk01.png \
-		res\v2\realnameauth_bk.png \
 		res\v2\notice_bk.png \
+		res\v2\realnameauth_bk.png \
 		res\v2\youthmode_spliter.png \
 		res\v2\youthmode_bk_01.png \
 		res\v2\customer_wx.png \
@@ -780,7 +778,6 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\contact_bk_01.png \
 		res\v2\qq_group.png \
 		res\v2\popup_close.png \
-		res\v2\cloud_disk.png \
 		res\v2\alipay_sel.png \
 		res\v2\recharge_center.png \
 		res\v2\msg_01_sel.png \
@@ -788,7 +785,6 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\wechat_sel.png \
 		res\v2\all_bk.png \
 		res\v2\about_icon.png \
-		res\v2\icon_finished_sel.png \
 		res\v2\icon_rocket.png \
 		res\v2\sign_close.png \
 		res\v2\youthmode_bk.png \
@@ -811,7 +807,6 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\check_sel.png \
 		res\v2\expand_icon_up.png \
 		res\v2\msg_center_sel.png \
-		res\v2\icon_exchange.png \
 		res\v2\back.png \
 		res\v2\vip_bk.png \
 		res\v2\icon_pass.png \
@@ -828,10 +823,9 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\contact_phone.png \
 		res\v2\realnameauth_edit.png \
 		res\v2\left_sel.png \
-		res\v2\close.png \
 		res\v2\radio_uncheck.png \
+		res\v2\close.png \
 		res\v2\msg_02_sel.png \
-		res\v2\icon_game.png \
 		res\v2\homepage.png \
 		res\v2\expand_icon.png \
 		res\v2\exchange_icon.png \
@@ -850,7 +844,6 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\user_count.png \
 		res\v2\vip_center.png \
 		res\v2\service.png \
-		res\v2\cloud_disk_sel.png \
 		res\v2\arrow.png \
 		res\v2\sign_bk.png \
 		res\v2\down.png \

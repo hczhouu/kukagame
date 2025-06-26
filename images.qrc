@@ -1,76 +1,13 @@
 <RCC>
     <qresource prefix="/">
-        <file>res/newVersion/close.png</file>
-        <file>res/newVersion/logo.png</file>
-        <file>res/newVersion/menu.png</file>
-        <file>res/newVersion/min.png</file>
-        <file>res/newVersion/ok.png</file>
-        <file>res/newVersion/shutdown.png</file>
-        <file>res/newVersion/user.png</file>
-        <file>res/newVersion/settings.png</file>
         <file>res/newVersion/menu_bk.png</file>
-        <file>res/newVersion/shutdown_bk.png</file>
-        <file>res/newVersion/icon_bill.png</file>
-        <file>res/newVersion/icon_buy_sel.png</file>
-        <file>res/newVersion/icon_remaintime.png</file>
-        <file>res/newVersion/icon_bill_sel.png</file>
-        <file>res/newVersion/icon_remaintime_sel.png</file>
-        <file>res/newVersion/close_popup.png</file>
-        <file>res/newVersion/icon_buy.png</file>
-        <file>res/newVersion/input_bk.png</file>
-        <file>res/newVersion/combox_bk.png</file>
-        <file>res/newVersion/down.png</file>
-        <file>res/newVersion/up.png</file>
-        <file>res/newVersion/checked.png</file>
-        <file>res/newVersion/uncheck.png</file>
-        <file>res/newVersion/right_arrow.png</file>
-        <file>res/newVersion/icon_delay.png</file>
-        <file>res/newVersion/icon_expire.png</file>
-        <file>res/newVersion/icon_help.png</file>
-        <file>res/newVersion/splitter_line.png</file>
-        <file>res/newVersion/home.png</file>
-        <file>res/newVersion/home_hover.png</file>
-        <file>res/newVersion/textinput_bk.png</file>
-        <file>res/newVersion/modify_text_input.png</file>
-        <file>res/newVersion/icon_wechat.png</file>
-        <file>res/newVersion/icon_alipay.png</file>
         <file>res/newVersion/ani_loading.gif</file>
         <file>res/newVersion/error.png</file>
         <file>res/newVersion/info.png</file>
-        <file>res/newVersion/handle.png</file>
-        <file>res/newVersion/text_input_bk.png</file>
-        <file>res/newVersion/text_input_vercode_bk.png</file>
-        <file>res/newVersion/sendsms_bk.png</file>
-        <file>res/newVersion/icon_vercode.png</file>
-        <file>res/newVersion/icon_left_arrow.png</file>
-        <file>res/newVersion/icon_right_arrow.png</file>
-        <file>res/newVersion/icon_cancel.png</file>
-        <file>res/newVersion/icon_checkbox.png</file>
-        <file>res/newVersion/icon_checkbox_sel.png</file>
-        <file>res/newVersion/addfolder_input.png</file>
-        <file>res/newVersion/kuka_text.png</file>
         <file>res/newVersion/main.ico</file>
-        <file>res/newVersion/icon_check_sel.png</file>
-        <file>res/newVersion/icon_check_unsel.png</file>
-        <file>res/newVersion/icon_check_unsel_1.png</file>
-        <file>res/newVersion/icon_check_sel_1.png</file>
         <file>res/newVersion/icon_menu.png</file>
         <file>res/newVersion/icon_min.png</file>
         <file>res/newVersion/icon_close.png</file>
-        <file>res/newVersion/icon_grid.png</file>
-        <file>res/newVersion/icon_list.png</file>
-        <file>res/newVersion/icon_back.png</file>
-        <file>res/newVersion/icon_network.png</file>
-        <file>res/newVersion/icon_desktop.svg</file>
-        <file>res/newVersion/icon_shutdown.svg</file>
-        <file>res/newVersion/icon_reset.svg</file>
-        <file>res/newVersion/shutdown.svg</file>
-        <file>res/newVersion/settings.svg</file>
-        <file>res/newVersion/icon_update.svg</file>
-        <file>res/newVersion/icon_repair.svg</file>
-        <file>res/newVersion/icon_about.svg</file>
-        <file>res/newVersion/icon_exit.svg</file>
-        <file>res/newVersion/icon_Invitation.png</file>
         <file>res/v2/logo.png</file>
         <file>res/v2/logo_bk.png</file>
         <file>res/v2/cloud_disk.png</file>
@@ -255,7 +192,6 @@
         <file>res/v2/service.png</file>
         <file>res/v2/service_ocr.jpg</file>
         <file>res/v2/kuka_ocr.png</file>
-        <file>res/newVersion/no-head-logo.jpg</file>
         <file>res/newVersion/no-head-logo.png</file>
     </qresource>
 </RCC>

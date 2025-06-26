@@ -19,7 +19,6 @@
         <file>qmls/PayPopup.qml</file>
         <file>qmls/RealNameAuthPopup.qml</file>
         <file>qmls/TitleBar.qml</file>
-        <file>qmls/TransferCompleteTableView.qml</file>
         <file>qmls/ViewPassPopup.qml</file>
         <file>qmls/YoungModePopup.qml</file>
         <file>qmls/HomePage.qml</file>

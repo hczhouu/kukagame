@@ -696,14 +696,12 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\newVersion\error.png \
 		res\newVersion\ani_loading.gif \
 		res\newVersion\vip.png \
-		res\newVersion\menu_bk.png \
 		res\newVersion\no-head-logo.png \
 		res\newVersion\svip.png \
 		res\newVersion\main.ico \
 		res\newVersion\info.png \
 		res\newVersion\icon_close.png \
 		res\v2\buy_btn.png \
-		res\v2\icon_download.png \
 		res\v2\msg_03_sel.png \
 		res\v2\realnameauth_name.png \
 		res\v2\right_sel.png \
@@ -722,7 +720,6 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\viewpass_phone.png \
 		res\v2\day_bk_sign_01.png \
 		res\v2\time_card.png \
-		res\v2\icon_files.png \
 		res\v2\orderlist.png \
 		res\v2\user_center_sel.png \
 		res\v2\logo.png \
@@ -731,15 +728,12 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\icon_sign_01.png \
 		res\v2\login_close.png \
 		res\v2\no_image_01.jpg \
-		res\v2\archive.png \
-		res\v2\free_bk.png \
 		res\v2\duration_card.png \
 		res\v2\tab_bk.png \
 		res\v2\msg_04.png \
 		res\v2\checkupdate_bk_01.png \
 		res\v2\youthmode_edit.png \
 		res\v2\cloudgame_sel.png \
-		res\v2\pay_success.png \
 		res\v2\youthmode_icon.png \
 		res\v2\day_bk_sign.png \
 		res\v2\vip.png \
@@ -752,8 +746,8 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\msg_02.png \
 		res\v2\check_unsel.png \
 		res\v2\exchange_spliter.png \
-		res\v2\icon_finished.png \
 		res\v2\wait.png \
+		res\v2\icon_finished.png \
 		res\v2\cloudgame.png \
 		res\v2\steam.png \
 		res\v2\menu.png \
@@ -792,7 +786,6 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\recharge_center.png \
 		res\v2\msg_01_sel.png \
 		res\v2\bk_005.png \
-		res\v2\Integral_center_sel.png \
 		res\v2\wechat_sel.png \
 		res\v2\all_bk.png \
 		res\v2\about_icon.png \
@@ -804,25 +797,22 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\bk_003.png \
 		res\v2\logo_bk.png \
 		res\v2\exchange_bk_01.png \
-		res\v2\tab_bk_004.png \
 		res\v2\checkupdate_bk.png \
 		res\v2\about_icon_tv.png \
 		res\v2\wechat.png \
 		res\v2\msg_center.png \
 		res\v2\customer_close.png \
-		res\v2\icon_files_sel.png \
 		res\v2\realnameauth_bk_01.png \
 		res\v2\kuka.png \
 		res\v2\wait_pay.png \
 		res\v2\all_icon.png \
 		res\v2\notice.png \
 		res\v2\right_unsel.png \
-		res\v2\check_sel.png \
 		res\v2\icon_sign_02.png \
+		res\v2\check_sel.png \
 		res\v2\expand_icon_up.png \
 		res\v2\msg_center_sel.png \
 		res\v2\icon_exchange.png \
-		res\v2\icon_download_sel.png \
 		res\v2\back.png \
 		res\v2\vip_bk.png \
 		res\v2\icon_pass.png \
@@ -849,17 +839,14 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\red_point.png \
 		res\v2\msg_01.png \
 		res\v2\exchangerecord.png \
-		res\v2\edit_bk_01.png \
 		res\v2\about_icon_pc.png \
+		res\v2\edit_bk_01.png \
 		res\v2\new_user.png \
-		res\v2\icon_upload.png \
-		res\v2\icon_upload_sel.png \
 		res\v2\viewpass_bk_01.png \
 		res\v2\q&a.png \
 		res\v2\userinfo.png \
 		res\v2\left_unsel.png \
 		res\v2\icon_sign.png \
-		res\v2\Integral_center.png \
 		res\v2\min.png \
 		res\v2\user_count.png \
 		res\v2\vip_center.png \
@@ -871,7 +858,6 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\day_bk.png \
 		res\v2\icon_signin.png \
 		res\v2\svip_bk.png \
-		res\v2\privileged_01.png \
 		res\v2\sign_reward_bk.png \
 		res\v2\service_ocr.jpg \
 		res\v2\login_bk.png \

@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>res/newVersion/menu_bk.png</file>
         <file>res/newVersion/ani_loading.gif</file>
         <file>res/newVersion/error.png</file>
         <file>res/newVersion/info.png</file>
@@ -8,12 +7,13 @@
         <file>res/newVersion/icon_menu.png</file>
         <file>res/newVersion/icon_min.png</file>
         <file>res/newVersion/icon_close.png</file>
+		<file>res/newVersion/svip.png</file>
+        <file>res/newVersion/vip.png</file>
         <file>res/v2/logo.png</file>
         <file>res/v2/logo_bk.png</file>
         <file>res/v2/cloud_disk.png</file>
         <file>res/v2/cloudgame.png</file>
         <file>res/v2/homepage.png</file>
-        <file>res/v2/Integral_center.png</file>
         <file>res/v2/msg_center.png</file>
         <file>res/v2/QQ.png</file>
         <file>res/v2/recharge_center.png</file>
@@ -27,7 +27,6 @@
         <file>res/v2/close.png</file>
         <file>res/v2/menu.png</file>
         <file>res/v2/min.png</file>
-        <file>res/v2/archive.png</file>
         <file>res/v2/q&amp;a.png</file>
         <file>res/v2/arrow.png</file>
         <file>res/v2/tab_bk.png</file>
@@ -35,8 +34,6 @@
         <file>res/v2/steam.png</file>
         <file>res/v2/vip.png</file>
         <file>res/v2/bk_003.png</file>
-        <file>res/v2/tab_bk_004.png</file>
-        <file>res/v2/free_bk.png</file>
         <file>res/v2/settings.png</file>
         <file>res/v2/speed.png</file>
         <file>res/v2/icon_ative.png</file>
@@ -51,12 +48,8 @@
         <file>res/v2/loginrecord.png</file>
         <file>res/v2/orderlist.png</file>
         <file>res/v2/userinfo.png</file>
-        <file>res/v2/privileged_01.png</file>
         <file>res/v2/try_01.png</file>
-        <file>res/v2/icon_download.png</file>
-        <file>res/v2/icon_files.png</file>
         <file>res/v2/icon_finished.png</file>
-        <file>res/v2/icon_upload.png</file>
         <file>res/v2/game_history.png</file>
         <file>res/v2/used_history.png</file>
         <file>res/v2/user_count.png</file>
@@ -80,7 +73,6 @@
         <file>res/v2/cloud_disk_sel.png</file>
         <file>res/v2/cloudgame_sel.png</file>
         <file>res/v2/homepage_sel.png</file>
-        <file>res/v2/Integral_center_sel.png</file>
         <file>res/v2/msg_center_sel.png</file>
         <file>res/v2/recharge_center_sel.png</file>
         <file>res/v2/user_center_sel.png</file>
@@ -89,10 +81,7 @@
         <file>res/v2/msg_02_sel.png</file>
         <file>res/v2/msg_03_sel.png</file>
         <file>res/v2/msg_sel.png</file>
-        <file>res/v2/icon_download_sel.png</file>
-        <file>res/v2/icon_files_sel.png</file>
         <file>res/v2/icon_finished_sel.png</file>
-        <file>res/v2/icon_upload_sel.png</file>
         <file>res/v2/sign_bk.png</file>
         <file>res/v2/sign_close.png</file>
         <file>res/v2/day_bk.png</file>
@@ -161,7 +150,6 @@
         <file>res/v2/startgame_bk.png</file>
         <file>res/v2/startgame_bk01.png</file>
         <file>res/v2/wait_pay.png</file>
-        <file>res/v2/pay_success.png</file>
         <file>res/v2/no_image.jpg</file>
         <file>res/v2/no_image_01.jpg</file>
         <file>res/v2/no_image_750.jpg</file>
@@ -183,8 +171,6 @@
         <file>res/v2/wechat.png</file>
         <file>res/v2/qq_group.png</file>
         <file>res/v2/icon_refresh.png</file>
-        <file>res/newVersion/svip.png</file>
-        <file>res/newVersion/vip.png</file>
         <file>res/v2/svip_bk.png</file>
         <file>res/v2/vip_bk.png</file>
         <file>res/v2/buy_btn.png</file>

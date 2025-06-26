@@ -75,8 +75,6 @@
         <file>res/v2/logo_bk.png</file>
         <file>res/v2/cloud_disk.png</file>
         <file>res/v2/cloudgame.png</file>
-        <file>res/v2/gameshop.png</file>
-        <file>res/v2/history.png</file>
         <file>res/v2/homepage.png</file>
         <file>res/v2/Integral_center.png</file>
         <file>res/v2/msg_center.png</file>
@@ -93,20 +91,14 @@
         <file>res/v2/menu.png</file>
         <file>res/v2/min.png</file>
         <file>res/v2/archive.png</file>
-        <file>res/v2/gift.png</file>
         <file>res/v2/q&amp;a.png</file>
         <file>res/v2/arrow.png</file>
         <file>res/v2/tab_bk.png</file>
-        <file>res/v2/game.png</file>
         <file>res/v2/kuka.png</file>
         <file>res/v2/steam.png</file>
         <file>res/v2/vip.png</file>
         <file>res/v2/bk_003.png</file>
         <file>res/v2/tab_bk_004.png</file>
-        <file>res/v2/icon_01.png</file>
-        <file>res/v2/icon_02.png</file>
-        <file>res/v2/icon_03.png</file>
-        <file>res/v2/icon_04.png</file>
         <file>res/v2/free_bk.png</file>
         <file>res/v2/settings.png</file>
         <file>res/v2/speed.png</file>
@@ -124,7 +116,6 @@
         <file>res/v2/userinfo.png</file>
         <file>res/v2/privileged_01.png</file>
         <file>res/v2/try_01.png</file>
-        <file>res/v2/vip_01.png</file>
         <file>res/v2/icon_download.png</file>
         <file>res/v2/icon_files.png</file>
         <file>res/v2/icon_finished.png</file>
@@ -142,38 +133,15 @@
         <file>res/v2/msg_04.png</file>
         <file>res/v2/msg_05.png</file>
         <file>res/v2/msg_06.png</file>
-        <file>res/v2/mem_01.png</file>
-        <file>res/v2/mem_02.png</file>
-        <file>res/v2/mem_03.png</file>
-        <file>res/v2/mem_04.png</file>
-        <file>res/v2/mem_05.png</file>
         <file>res/v2/exchangerecord_sel.png</file>
         <file>res/v2/loginrecord_sel.png</file>
         <file>res/v2/orderlist_sel.png</file>
         <file>res/v2/userinfo1.png</file>
         <file>res/v2/card_bk.png</file>
         <file>res/v2/spliter_line.png</file>
-        <file>res/v2/crown_01.png</file>
-        <file>res/v2/crown_02.png</file>
-        <file>res/v2/crown_03.png</file>
-        <file>res/v2/crown_04.png</file>
-        <file>res/v2/crown_05.png</file>
-        <file>res/v2/crown_big.png</file>
-        <file>res/v2/lev_bk_01.png</file>
-        <file>res/v2/lev_bk_02.png</file>
-        <file>res/v2/lev_bk_03.png</file>
-        <file>res/v2/lev_bk_04.png</file>
-        <file>res/v2/lev_bk_05.png</file>
         <file>res/v2/lv_bk.png</file>
-        <file>res/v2/spliter_01.png</file>
-        <file>res/v2/spliter_02.png</file>
-        <file>res/v2/spliter_03.png</file>
-        <file>res/v2/spliter_04.png</file>
-        <file>res/v2/spliter_05.png</file>
         <file>res/v2/cloud_disk_sel.png</file>
         <file>res/v2/cloudgame_sel.png</file>
-        <file>res/v2/gameshop_sel.png</file>
-        <file>res/v2/history_sel.png</file>
         <file>res/v2/homepage_sel.png</file>
         <file>res/v2/Integral_center_sel.png</file>
         <file>res/v2/msg_center_sel.png</file>
@@ -195,12 +163,6 @@
         <file>res/v2/day_bk_sign_01.png</file>
         <file>res/v2/icon_sign.png</file>
         <file>res/v2/icon_sign_01.png</file>
-        <file>res/v2/upgrade_bk.png</file>
-        <file>res/v2/upgrade_bk_01.png</file>
-        <file>res/v2/upgrade_icon_01.png</file>
-        <file>res/v2/upgrade_icon_02.png</file>
-        <file>res/v2/upgrade_icon_03.png</file>
-        <file>res/v2/upgrade_icon_04.png</file>
         <file>res/v2/popup_close.png</file>
         <file>res/v2/login_bk_02.png</file>
         <file>res/v2/login_bk.png</file>

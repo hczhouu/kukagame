@@ -25,10 +25,8 @@
         <file>qmls/HomePage.qml</file>
         <file>qmls/UserCenterPage.qml</file>
         <file>qmls/MsgCenterPage.qml</file>
-        <file>qmls/IntegralCenterPage.qml</file>
         <file>qmls/RechargeCenterPage.qml</file>
         <file>qmls/SigninPopup.qml</file>
-        <file>qmls/UpgradePopup.qml</file>
         <file>qmls/LoginPopup.qml</file>
         <file>qmls/PromoCodePopup.qml</file>
         <file>qmls/GameDetailsPage.qml</file>

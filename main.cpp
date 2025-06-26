@@ -139,7 +139,7 @@ int main(int argc, char *argv[])
     }
 
     QSettings setting("HKEY_CURRENT_USER\\SOFTWARE\\kukaGame", QSettings::NativeFormat);
-    setting.setValue("version", "3.0.4.8");
+    setting.setValue("version", "3.0.4.9");
 
     if (setting.value("closeExit").isNull())
     {
@@ -156,23 +156,9 @@ int main(int argc, char *argv[])
         setting.setValue("apiUrl", "https://ovirtapi.singlecloud.cc/");
     }
 
-    if (setting.value("bandHost").isNull())
-    {
-        setting.setValue("bandHost", "111.46.204.34");
-    }
-
     if (setting.value("startGameNoTips").isNull())
     {
         setting.setValue("startGameNoTips", false);
-    }
-
-    QString instanceId = QUuid::createUuid().toString(QUuid::Id128).toUpper();
-    if(setting.value("instanceId").isNull() ||
-        setting.value("instanceId").toString().isEmpty())
-    {
-        setting.setValue("instanceId", instanceId);
-    } else {
-        instanceId = setting.value("instanceId").toString().toUpper();
     }
 
     //设置捕获dump文件

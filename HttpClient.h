@@ -143,7 +143,6 @@ private:
     static std::shared_ptr<HttpClient> m_pClient;
     static std::mutex m_mutex;
     static QString m_strApiUrl;
-    static QString m_bandHost;
 
     QString m_strUuid;
     QString m_strToken;

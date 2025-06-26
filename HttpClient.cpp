@@ -25,7 +25,6 @@ extern "C"{
 std::shared_ptr<HttpClient> HttpClient::m_pClient = nullptr;
 std::mutex HttpClient::m_mutex;
 QString HttpClient::m_strApiUrl = "";
-QString HttpClient::m_bandHost = "";
 
 static std::atomic<int64_t> downFileSize(0);
 static std::atomic<int64_t> totalFileSize(0);
@@ -48,7 +47,6 @@ HttpClient::HttpClient()
 
     QSettings settings("HKEY_CURRENT_USER\\SOFTWARE\\kukaGame", QSettings::NativeFormat);
     m_strApiUrl = settings.value("apiUrl").toString();
-    m_bandHost = settings.value("bandHost").toString();
     m_noNotify = settings.value("noNotify", false).toBool();
     m_closeExit = settings.value("closeExit", false).toBool();
     m_startGameNoTips = settings.value("startGameNoTips", false).toBool();

@@ -1457,9 +1457,8 @@ void HttpClient::parseCheckUpdateVersion(const std::string& resp)
     m_strFilePackUrl = itemData.value("updatePackageFileAddress").toString();;
 
     QStringList newVerList = strVersion.split(".");
-    QString cfgPath = QGuiApplication::applicationDirPath() + "/version.ini";
-    QSettings settings(cfgPath, QSettings::IniFormat);
-    QString strCurrentVersion = settings.value("main/version").toString();
+    QSettings setting("HKEY_CURRENT_USER\\SOFTWARE\\kukaGame", QSettings::NativeFormat);
+    QString strCurrentVersion = setting.value("version").toString();
     QStringList currVerList = strCurrentVersion.split(".");
 
     m_verMessage = u8"当前已经是最新版本";

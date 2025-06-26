@@ -139,6 +139,8 @@ int main(int argc, char *argv[])
     }
 
     QSettings setting("HKEY_CURRENT_USER\\SOFTWARE\\kukaGame", QSettings::NativeFormat);
+    setting.setValue("version", "3.0.4.8");
+
     if (setting.value("closeExit").isNull())
     {
         setting.setValue("closeExit", false);

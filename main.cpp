@@ -101,6 +101,13 @@ LONG WINAPI ExceptionFilter(LPEXCEPTION_POINTERS lpExceptionInfo)
 
 int main(int argc, char *argv[])
 {
+    QString cachePath = QStandardPaths::standardLocations(QStandardPaths::AppDataLocation).first() + "/kukaStream";
+    QDir dir(cachePath);
+    if (dir.exists())
+    {
+        dir.removeRecursively();
+    }
+
     QCoreApplication::setOrganizationName("kukaGame");
     QCoreApplication::setApplicationName("kukaStream");
     //初始化日志模块

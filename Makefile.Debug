@@ -3490,9 +3490,6 @@ tmp\debug\obj\GameDetails.obj: GameDetails.cpp GameDetails.h \
 		models\HomeHotGamesModel.h \
 		models\HomeGoodsTabModel.h \
 		models\HomeGoodsModel.h \
-		models\GameShopBannerModel.h \
-		models\GameShopTabModel.h \
-		models\GameShopItemModel.h \
 		models\ActivitiesNoticeModel.h \
 		models\DynamicNoticeModel.h \
 		models\SystemNoticeModel.h \
@@ -3901,9 +3898,6 @@ tmp\debug\obj\HttpClient.obj: HttpClient.cpp HttpClient.h \
 		models\HomeHotGamesModel.h \
 		models\HomeGoodsTabModel.h \
 		models\HomeGoodsModel.h \
-		models\GameShopBannerModel.h \
-		models\GameShopTabModel.h \
-		models\GameShopItemModel.h \
 		models\GameSkuModel.h \
 		models\ActivitiesNoticeModel.h \
 		models\DynamicNoticeModel.h \
@@ -4054,9 +4048,6 @@ tmp\debug\obj\MsgCenter.obj: MsgCenter.cpp MsgCenter.h \
 		models\HomeHotGamesModel.h \
 		models\HomeGoodsTabModel.h \
 		models\HomeGoodsModel.h \
-		models\GameShopBannerModel.h \
-		models\GameShopTabModel.h \
-		models\GameShopItemModel.h \
 		models\GameSkuModel.h \
 		models\SearchResultModel.h \
 		models\GameDetailsImageModel.h \
@@ -4515,9 +4506,6 @@ tmp\debug\obj\main.obj: main.cpp D:\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\QG
 		models\timecardlistmodel.h \
 		models\HomeHotGamesModel.h \
 		models\HomeGoodsModel.h \
-		models\GameShopBannerModel.h \
-		models\GameShopTabModel.h \
-		models\GameShopItemModel.h \
 		models\GameDetailsImageModel.h \
 		log\easylogging++.h \
 		D:\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\QByteArray \

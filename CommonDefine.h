@@ -25,23 +25,6 @@
 #include "models/GameLabelListModel.h"
 #include "log/easylogging++.h"
 
-const std::string  LOGNAME = "KUKAGAMELOG";
-
-
-struct CACHEIMAGE
-{
-    QString id;
-    QString rawUrl;
-    QString localUrl;
-
-    CACHEIMAGE() {
-        id = "";
-        rawUrl = "";
-        localUrl = "";
-    }
-};
-
-
 
 #endif // COMMONDEFINE_H
 

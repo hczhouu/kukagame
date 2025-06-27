@@ -141,44 +141,6 @@ size_t WriteFileCallback(char* buffer, size_t size,
     return fwrite(buffer, size, nitems, pFile);
 }
 
-//下载图片文件
-bool downloadImageFile(const std::string& imgUrl, const std::string& savePath)
-{
-    std::lock_guard<std::mutex> locker(downloadMutex);
-    FILE* pFile = fopen(savePath.data(), "wb+");
-    if (pFile == NULL)
-    {
-        return false;
-    }
-
-    CURL* pCurl = curl_easy_init();
-    curl_easy_setopt(pCurl, CURLOPT_URL, imgUrl.data());
-    curl_easy_setopt(pCurl, CURLOPT_SSL_VERIFYPEER, 0L);
-    curl_easy_setopt(pCurl, CURLOPT_SSL_VERIFYHOST, 0L);
-    curl_easy_setopt(pCurl, CURLOPT_TRANSFER_ENCODING, 1L);
-    curl_easy_setopt(pCurl, CURLOPT_WRITEFUNCTION, WriteFileCallback);
-    curl_easy_setopt(pCurl, CURLOPT_WRITEDATA, pFile);
-    curl_easy_setopt(pCurl, CURLOPT_CONNECTTIMEOUT, 20L);
-    curl_easy_setopt(pCurl, CURLOPT_FOLLOWLOCATION, 1L);
-    curl_easy_setopt(pCurl, CURLOPT_NOPROXY, "*");
-    struct curl_slist* headers = NULL;
-    headers = curl_slist_append(headers, "Accept: application/octet-stream");
-    curl_easy_setopt(pCurl, CURLOPT_HTTPHEADER, headers);
-
-    CURLcode eCode = curl_easy_perform(pCurl);
-    curl_slist_free_all(headers);
-    curl_easy_cleanup(pCurl);
-    fclose(pFile);
-
-    if (eCode != CURLE_OK)
-    {
-        return false;
-    }
-
-    return true;
-}
-
-
 
 QString GetBaseUrl()
 {

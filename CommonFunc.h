@@ -44,10 +44,6 @@ bool SendHttpRequest(std::string& resp, bool bPostMethod, const std::string& str
 size_t WriteFileCallback(char* buffer, size_t size,
                      size_t nitems, void* outstream);
 
-//下载图片文件
-bool downloadImageFile(const std::string& imgUrl, const std::string& savePath);
-
-
 QString GetBaseUrl();
 
 //AES/CBC加密

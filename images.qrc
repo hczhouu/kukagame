@@ -29,26 +29,19 @@
         <file>res/v2/q&amp;a.png</file>
         <file>res/v2/arrow.png</file>
         <file>res/v2/tab_bk.png</file>
-        <file>res/v2/kuka.png</file>
-        <file>res/v2/steam.png</file>
         <file>res/v2/vip.png</file>
         <file>res/v2/bk_003.png</file>
-        <file>res/v2/settings.png</file>
-        <file>res/v2/speed.png</file>
         <file>res/v2/icon_rocket.png</file>
         <file>res/v2/icon_signin.png</file>
         <file>res/v2/icon_timer.png</file>
         <file>res/v2/bk_005.png</file>
         <file>res/v2/exchangerecord.png</file>
-        <file>res/v2/head.png</file>
         <file>res/v2/loginrecord.png</file>
         <file>res/v2/orderlist.png</file>
         <file>res/v2/userinfo.png</file>
         <file>res/v2/try_01.png</file>
-        <file>res/v2/game_history.png</file>
         <file>res/v2/used_history.png</file>
         <file>res/v2/user_count.png</file>
-        <file>res/v2/duration_card.png</file>
         <file>res/v2/time_card.png</file>
         <file>res/v2/weeks_card.png</file>
         <file>res/v2/msg_.png</file>
@@ -84,7 +77,6 @@
         <file>res/v2/icon_sign_01.png</file>
         <file>res/v2/popup_close.png</file>
         <file>res/v2/login_bk_02.png</file>
-        <file>res/v2/login_bk.png</file>
         <file>res/v2/check_sel.png</file>
         <file>res/v2/check_unsel.png</file>
         <file>res/v2/edit_bk.png</file>
@@ -131,7 +123,6 @@
         <file>res/v2/wechat_sel.png</file>
         <file>res/v2/wechat_unsel.png</file>
         <file>res/v2/down.png</file>
-        <file>res/v2/wait.png</file>
         <file>res/v2/icon_sign_02.png</file>
         <file>res/v2/sign_reward_bk.png</file>
         <file>res/v2/back.png</file>
@@ -142,7 +133,6 @@
         <file>res/v2/radio_uncheck.png</file>
         <file>res/v2/startgame_bk.png</file>
         <file>res/v2/startgame_bk01.png</file>
-        <file>res/v2/wait_pay.png</file>
         <file>res/v2/no_image.jpg</file>
         <file>res/v2/no_image_01.jpg</file>
         <file>res/v2/no_image_750.jpg</file>

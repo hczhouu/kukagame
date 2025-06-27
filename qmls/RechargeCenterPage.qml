@@ -248,63 +248,6 @@ Item {
                 }
 
             }
-
-            //时段卡
-            // Rectangle {
-            //     width: 230 * dpi
-            //     height: 70 * dpi
-            //     color: "#222733"
-            //     anchors.right: parent.right
-            //     anchors.rightMargin: 25 * dpi
-            //     anchors.bottom: parent.bottom
-            //     anchors.bottomMargin: 23 * dpi
-            //     radius: 10
-            //     border.width: 1
-            //     border.color: "#2B303C"
-
-            //     Rectangle {
-            //         width: parent.width / 2
-            //         height: parent.height
-            //         color: "transparent"
-            //         anchors.left: parent.left
-
-            //         Image {
-            //             source: "../res/v2/duration_card.png"
-            //             fillMode: Image.PreserveAspectFit
-            //             scale: dpi
-            //             anchors.verticalCenter: parent.verticalCenter
-            //             anchors.right: parent.right
-            //             anchors.rightMargin: 20 * dpi
-            //         }
-            //     }
-
-            //     Rectangle {
-            //         width: parent.width / 2
-            //         height: parent.height
-            //         color: "transparent"
-            //         anchors.right: parent.right
-
-            //         Column {
-            //             anchors.verticalCenter: parent.verticalCenter
-            //             width: parent.width
-            //             anchors.left: parent.left
-            //             Text {
-            //                 text:"时段卡"
-            //                 font.pixelSize: 16 * dpi
-            //                 color: "white"
-            //             }
-
-            //             Text {
-            //                 text:payTimeCard ? HttpClient.timecardFree : HttpClient.freeTimecardFree
-            //                 font.pixelSize: 16 * dpi
-            //                 color: "#A4A6AB"
-            //                 width: parent.width
-            //                 elide: Text.ElideRight
-            //             }
-            //         }
-            //     }
-            // }
-
         }
     }
 

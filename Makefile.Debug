@@ -726,7 +726,6 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\icon_sign_01.png \
 		res\v2\login_close.png \
 		res\v2\no_image_01.jpg \
-		res\v2\duration_card.png \
 		res\v2\tab_bk.png \
 		res\v2\msg_04.png \
 		res\v2\checkupdate_bk_01.png \
@@ -744,14 +743,10 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\msg_02.png \
 		res\v2\check_unsel.png \
 		res\v2\exchange_spliter.png \
-		res\v2\wait.png \
 		res\v2\cloudgame.png \
-		res\v2\steam.png \
 		res\v2\menu.png \
 		res\v2\recharge_center_sel.png \
-		res\v2\speed.png \
 		res\v2\contact_home.png \
-		res\v2\head.png \
 		res\v2\user_center.png \
 		res\v2\realnameauth_idcard.png \
 		res\v2\startgame_bk01.png \
@@ -764,7 +759,6 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\exchange_edit_bk.png \
 		res\v2\homepage_sel.png \
 		res\v2\kuka_ocr.png \
-		res\v2\game_history.png \
 		res\v2\contact_bk.png \
 		res\v2\vip_center_sel.png \
 		res\v2\weeks_card.png \
@@ -798,8 +792,6 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\msg_center.png \
 		res\v2\customer_close.png \
 		res\v2\realnameauth_bk_01.png \
-		res\v2\kuka.png \
-		res\v2\wait_pay.png \
 		res\v2\all_icon.png \
 		res\v2\notice.png \
 		res\v2\right_unsel.png \
@@ -852,9 +844,7 @@ tmp\debug\rcc\qrc_images.cpp: images.qrc \
 		res\v2\svip_bk.png \
 		res\v2\sign_reward_bk.png \
 		res\v2\service_ocr.jpg \
-		res\v2\login_bk.png \
 		res\v2\icon_refresh.png \
-		res\v2\settings.png \
 		res\v2\viewpass_edit.png \
 		res\v2\orderlist_sel.png \
 		res\v2\QQ.png \

@@ -119,13 +119,6 @@ Rectangle {
                 icon_path_sel:"../res/v2/homepage_sel.png"
             }
 
-            //V2隐藏
-            // ListElement {
-            //     name:"游戏商城";
-            //     icon_path:"../res/v2/gameshop.png"
-            //     icon_path_sel:"../res/v2/gameshop_sel.png"
-            // }
-
             ListElement {
                 name:"全部游戏";
                 icon_path:"../res/v2/cloudgame.png"

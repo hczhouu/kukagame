@@ -703,8 +703,8 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\newVersion\icon_close.png \
 		res\v2\buy_btn.png \
 		res\v2\msg_03_sel.png \
-		res\v2\realnameauth_name.png \
 		res\v2\right_sel.png \
+		res\v2\realnameauth_name.png \
 		res\v2\exchange_bk.png \
 		res\v2\recharge_bk.png \
 		res\v2\contact.png \
@@ -776,7 +776,6 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\alipay_sel.png \
 		res\v2\recharge_center.png \
 		res\v2\msg_01_sel.png \
-		res\v2\bk_005.png \
 		res\v2\wechat_sel.png \
 		res\v2\all_bk.png \
 		res\v2\about_icon.png \
@@ -784,7 +783,6 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\sign_close.png \
 		res\v2\youthmode_bk.png \
 		res\v2\signin.png \
-		res\v2\bk_003.png \
 		res\v2\logo_bk.png \
 		res\v2\exchange_bk_01.png \
 		res\v2\checkupdate_bk.png \
@@ -810,7 +808,6 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\exchangerecord_sel.png \
 		res\v2\login_bk_02.png \
 		res\v2\msg_.png \
-		res\v2\used_history.png \
 		res\v2\search.png \
 		res\v2\msg_03.png \
 		res\v2\contact_phone.png \
@@ -829,7 +826,6 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\edit_bk_01.png \
 		res\v2\new_user.png \
 		res\v2\viewpass_bk_01.png \
-		res\v2\q&a.png \
 		res\v2\userinfo.png \
 		res\v2\left_unsel.png \
 		res\v2\icon_sign.png \
@@ -841,7 +837,6 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\sign_bk.png \
 		res\v2\down.png \
 		res\v2\day_bk.png \
-		res\v2\icon_signin.png \
 		res\v2\svip_bk.png \
 		res\v2\sign_reward_bk.png \
 		res\v2\service_ocr.jpg \
@@ -849,10 +844,9 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\viewpass_edit.png \
 		res\v2\orderlist_sel.png \
 		res\v2\QQ.png \
-		res\v2\viewpass_lock.png \
 		res\v2\lable_bk.png \
-		res\v2\account.png \
-		res\v2\icon_timer.png
+		res\v2\viewpass_lock.png \
+		res\v2\account.png
 	D:\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe -name images images.qrc -o tmp\release\rcc\qrc_images.cpp
 
 compiler_moc_predefs_make_all: tmp\release\moc\moc_predefs.h
@@ -4379,7 +4373,6 @@ tmp\release\obj\main.obj: main.cpp D:\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui\
 		D:\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\quuid.h \
 		D:\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\QStandardPaths \
 		D:\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qstandardpaths.h \
-		D:\Qt5.14.2\5.14.2\msvc2017_64\include\QtNetwork\QSslSocket \
 		D:\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\QProcess \
 		D:\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore\qprocess.h \
 		CommonFunc.h \

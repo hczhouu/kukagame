@@ -1,0 +1,16 @@
+{
+  "name": "kukaStream",
+  "productName": "kukaStream",
+  "description": "kukaStream",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "src",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "31.3.1"
+  }
+}

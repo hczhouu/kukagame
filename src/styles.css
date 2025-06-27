@@ -1,0 +1,51 @@
+/* styles.css */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #example {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .test {
+            width: 400px;
+            height: 50px;
+            background-color: white;
+        }
+
+        .close-button {
+            margin-top: 12px;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            display: block;
+            float: right;
+            background-size: contain;
+            background-image: url('./sdk/images/close.png');
+            background-repeat: no-repeat;
+        }
+
+        /* 全屏 -178 缩小 -20 */
+        .max-min-button {
+            width: 60px;
+            height: 40px;
+            cursor: pointer;
+            display: block;
+            float: right;
+            background-color: #101112;
+            background-repeat: no-repeat;
+        }
+
+        .max-button {
+            background-image: url('./sdk/images/icon_toolbar.png');
+            background-position-x: -279px;
+            background-position-y: 0px;
+        }
+
+        .min-button {
+            background-image: url('./sdk/images/new-exit-fullscreen.png');
+            background-position: -20px 0;
+        }
+/* Add styles here to customize the appearance of your app */

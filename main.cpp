@@ -18,7 +18,6 @@
 #include <QIcon>
 #include <QUuid>
 #include <QStandardPaths>
-#include <QSslSocket>
 #include <string>
 #include <DbgHelp.h>
 #include <Shlwapi.h>

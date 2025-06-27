@@ -26,9 +26,7 @@
         <file>res/v2/close.png</file>
         <file>res/v2/menu.png</file>
         <file>res/v2/min.png</file>
-        <file>res/v2/arrow.png</file>
         <file>res/v2/tab_bk.png</file>
-        <file>res/v2/vip.png</file>
         <file>res/v2/icon_rocket.png</file>
         <file>res/v2/exchangerecord.png</file>
         <file>res/v2/loginrecord.png</file>
@@ -51,7 +49,6 @@
         <file>res/v2/userinfo1.png</file>
         <file>res/v2/card_bk.png</file>
         <file>res/v2/spliter_line.png</file>
-        <file>res/v2/lv_bk.png</file>
         <file>res/v2/cloudgame_sel.png</file>
         <file>res/v2/homepage_sel.png</file>
         <file>res/v2/msg_center_sel.png</file>
@@ -116,7 +113,6 @@
         <file>res/v2/alipay_unsel.png</file>
         <file>res/v2/wechat_sel.png</file>
         <file>res/v2/wechat_unsel.png</file>
-        <file>res/v2/down.png</file>
         <file>res/v2/icon_sign_02.png</file>
         <file>res/v2/sign_reward_bk.png</file>
         <file>res/v2/back.png</file>

@@ -710,7 +710,6 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\contact.png \
 		res\v2\about_icon_phone.png \
 		res\v2\wechat_unsel.png \
-		res\v2\lv_bk.png \
 		res\v2\userinfo1.png \
 		res\v2\icon_invite.png \
 		res\v2\login_bk2.png \
@@ -734,7 +733,6 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\cloudgame_sel.png \
 		res\v2\youthmode_icon.png \
 		res\v2\day_bk_sign.png \
-		res\v2\vip.png \
 		res\v2\edit_bk.png \
 		res\v2\customer_qq.png \
 		res\v2\success.png \
@@ -833,9 +831,7 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\user_count.png \
 		res\v2\vip_center.png \
 		res\v2\service.png \
-		res\v2\arrow.png \
 		res\v2\sign_bk.png \
-		res\v2\down.png \
 		res\v2\day_bk.png \
 		res\v2\svip_bk.png \
 		res\v2\sign_reward_bk.png \

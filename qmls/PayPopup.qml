@@ -410,7 +410,7 @@ Popup {
                     AnimatedImage {
                         id:animateLoading
                         visible:HttpClient.qrLoading
-                        source: "../res/newVersion/ani_loading.gif"
+                        source: "../res/v2/ani_loading.gif"
                         fillMode: Image.PreserveAspectFit
                         asynchronous: true
                         anchors.centerIn: parent

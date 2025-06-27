@@ -40,7 +40,7 @@ HttpClient::HttpClient()
     m_timecardDuration = u8"0天0时0分";
     m_timecardPeriod = u8"0天0时0分";
     m_findNewVersion = false;
-    m_headLogoUrl = "../res/newVersion/no-head-logo.png";
+    m_headLogoUrl = "../res/v2/no-head-logo.png";
     m_vipFlags = "";
     m_vipLabel = "";
     m_payPercent = 1.0;
@@ -1265,10 +1265,10 @@ void HttpClient::parseRefreshClientInfo(const std::string& resp)
 
     if (vipInfo.compare("SVIP") == 0)
     {
-        m_vipFlags = "../res/newVersion/svip.png";
+        m_vipFlags = "../res/v2/svip.png";
         m_payPercent = 0.80;
     } else if (vipInfo.compare("VIP") == 0) {
-        m_vipFlags = "../res/newVersion/vip.png";
+        m_vipFlags = "../res/v2/vip.png";
         m_payPercent = 0.90;
     } else {
         m_vipFlags = "";
@@ -1402,7 +1402,7 @@ void HttpClient::parseUserInfoReply(const std::string& resp)
     if (m_headLogoUrl.indexOf("http") < 0 ||
         m_headLogoUrl.indexOf("https") < 0)
     {
-        m_headLogoUrl = "../res/newVersion/no-head-logo.png";
+        m_headLogoUrl = "../res/v2/no-head-logo.png";
     }
     //用户名
     m_strUserName = itemData.value("userName").toString();

@@ -167,7 +167,7 @@ int main(int argc, char *argv[])
     QFont font;
     font.setFamily(QString::fromLocal8Bit("微软雅黑"));
     app.setFont(font);
-    app.setWindowIcon(QIcon(":res/newVersion/main.ico"));
+    app.setWindowIcon(QIcon(":res/v2/main.ico"));
 
 
     QQmlApplicationEngine engine;

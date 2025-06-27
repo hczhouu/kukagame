@@ -285,7 +285,7 @@ Window {
    SystemTrayIcon {
         visible: true
         tooltip: "酷卡云游戏"
-        icon.source: "../res/newVersion/main.ico"
+        icon.source: "../res/v2/main.ico"
         menu:Menu {
              MenuItem {
                  text: qsTr("主界面")

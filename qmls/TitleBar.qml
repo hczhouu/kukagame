@@ -370,7 +370,7 @@ Rectangle {
                 color: "transparent"
                 Image {
                     anchors.centerIn: parent
-                    source: "../res/newVersion/icon_menu.png"
+                    source: "../res/v2/icon_menu.png"
                     fillMode: Image.PreserveAspectFit
                 }
              }
@@ -535,7 +535,7 @@ Rectangle {
                 color: "transparent"
                 Image {
                     anchors.centerIn: parent
-                    source: "../res/newVersion/icon_min.png"
+                    source: "../res/v2/icon_min.png"
                     fillMode: Image.PreserveAspectFit
                 }
 
@@ -587,7 +587,7 @@ Rectangle {
                 color: "transparent"
                 Image {
                     anchors.centerIn: parent
-                    source: "../res/newVersion/icon_close.png"
+                    source: "../res/v2/icon_close.png"
                     fillMode: Image.PreserveAspectFit
                 }
 

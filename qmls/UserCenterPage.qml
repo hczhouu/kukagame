@@ -72,7 +72,7 @@ Item {
                             id: nameIamge
                             anchors.fill: parent
                             scale: dpi
-                            source: "../res/newVersion/no-head-logo.png"
+                            source: "../res/v2/no-head-logo.png"
                             visible: false
                             cache: false
                             asynchronous: true

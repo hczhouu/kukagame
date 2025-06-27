@@ -43,8 +43,8 @@ Item {
                     color: "transparent"
                     anchors.verticalCenter: parent.verticalCenter
                     Image {
-                        source: isError ? "../res/newVersion/error.png" :
-                                           "../res/newVersion/info.png"
+                        source: isError ? "../res/v2/error.png" :
+                                           "../res/v2/info.png"
                         anchors.fill: parent
                     }
                 }

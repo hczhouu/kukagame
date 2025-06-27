@@ -77,7 +77,7 @@ Popup {
         AnimatedImage {
             id:animateLoading
             visible:!MsgCenter.msgReady
-            source: "../res/newVersion/ani_loading.gif"
+            source: "../res/v2/ani_loading.gif"
             fillMode: Image.PreserveAspectFit
             asynchronous: true
             anchors.centerIn: parent
@@ -153,7 +153,7 @@ Popup {
 
                                 AnimatedImage {
                                     visible:imageMsg.status !== Image.Ready
-                                    source: "../res/newVersion/ani_loading.gif"
+                                    source: "../res/v2/ani_loading.gif"
                                     fillMode: Image.PreserveAspectFit
                                     asynchronous: true
                                     anchors.centerIn: parent

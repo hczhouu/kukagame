@@ -691,16 +691,6 @@ compiler_rcc_clean:
 	-$(DEL_FILE) tmp\release\rcc\qrc_images.cpp
 tmp\release\rcc\qrc_images.cpp: images.qrc \
 		D:\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe \
-		res\newVersion\icon_menu.png \
-		res\newVersion\icon_min.png \
-		res\newVersion\error.png \
-		res\newVersion\ani_loading.gif \
-		res\newVersion\vip.png \
-		res\newVersion\no-head-logo.png \
-		res\newVersion\svip.png \
-		res\newVersion\main.ico \
-		res\newVersion\info.png \
-		res\newVersion\icon_close.png \
 		res\v2\buy_btn.png \
 		res\v2\msg_03_sel.png \
 		res\v2\right_sel.png \
@@ -717,6 +707,7 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\about_bk.png \
 		res\v2\viewpass_phone.png \
 		res\v2\day_bk_sign_01.png \
+		res\v2\icon_close.png \
 		res\v2\time_card.png \
 		res\v2\orderlist.png \
 		res\v2\user_center_sel.png \
@@ -735,6 +726,7 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\day_bk_sign.png \
 		res\v2\edit_bk.png \
 		res\v2\customer_qq.png \
+		res\v2\vip.png \
 		res\v2\success.png \
 		res\v2\no_image_750.jpg \
 		res\v2\startgame_bk.png \
@@ -745,7 +737,9 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\cloudgame.png \
 		res\v2\menu.png \
 		res\v2\recharge_center_sel.png \
+		res\v2\no-head-logo.png \
 		res\v2\contact_home.png \
+		res\v2\main.ico \
 		res\v2\user_center.png \
 		res\v2\realnameauth_idcard.png \
 		res\v2\startgame_bk01.png \
@@ -758,6 +752,7 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\exchange_edit_bk.png \
 		res\v2\homepage_sel.png \
 		res\v2\kuka_ocr.png \
+		res\v2\ani_loading.gif \
 		res\v2\contact_bk.png \
 		res\v2\vip_center_sel.png \
 		res\v2\weeks_card.png \
@@ -765,6 +760,7 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\spliter_line.png \
 		res\v2\icon_phone.png \
 		res\v2\alipay_unsel.png \
+		res\v2\info.png \
 		res\v2\loginrecord.png \
 		res\v2\loginrecord_sel.png \
 		res\v2\msg_sel.png \
@@ -783,8 +779,10 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\signin.png \
 		res\v2\logo_bk.png \
 		res\v2\exchange_bk_01.png \
+		res\v2\icon_menu.png \
 		res\v2\checkupdate_bk.png \
 		res\v2\about_icon_tv.png \
+		res\v2\error.png \
 		res\v2\wechat.png \
 		res\v2\msg_center.png \
 		res\v2\customer_close.png \
@@ -811,6 +809,7 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\contact_phone.png \
 		res\v2\realnameauth_edit.png \
 		res\v2\left_sel.png \
+		res\v2\svip.png \
 		res\v2\radio_uncheck.png \
 		res\v2\close.png \
 		res\v2\msg_02_sel.png \
@@ -836,6 +835,7 @@ tmp\release\rcc\qrc_images.cpp: images.qrc \
 		res\v2\svip_bk.png \
 		res\v2\sign_reward_bk.png \
 		res\v2\service_ocr.jpg \
+		res\v2\icon_min.png \
 		res\v2\icon_refresh.png \
 		res\v2\viewpass_edit.png \
 		res\v2\orderlist_sel.png \

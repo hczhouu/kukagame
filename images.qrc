@@ -1,14 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>res/newVersion/ani_loading.gif</file>
-        <file>res/newVersion/error.png</file>
-        <file>res/newVersion/info.png</file>
-        <file>res/newVersion/main.ico</file>
-        <file>res/newVersion/icon_menu.png</file>
-        <file>res/newVersion/icon_min.png</file>
-        <file>res/newVersion/icon_close.png</file>
-		<file>res/newVersion/svip.png</file>
-        <file>res/newVersion/vip.png</file>
         <file>res/v2/logo.png</file>
         <file>res/v2/logo_bk.png</file>
         <file>res/v2/cloudgame.png</file>
@@ -151,6 +142,15 @@
         <file>res/v2/service.png</file>
         <file>res/v2/service_ocr.jpg</file>
         <file>res/v2/kuka_ocr.png</file>
-        <file>res/newVersion/no-head-logo.png</file>
+        <file>res/v2/svip.png</file>
+        <file>res/v2/vip.png</file>
+        <file>res/v2/error.png</file>
+        <file>res/v2/info.png</file>
+        <file>res/v2/main.ico</file>
+        <file>res/v2/ani_loading.gif</file>
+        <file>res/v2/no-head-logo.png</file>
+        <file>res/v2/icon_close.png</file>
+        <file>res/v2/icon_menu.png</file>
+        <file>res/v2/icon_min.png</file>
     </qresource>
 </RCC>

@@ -138,7 +138,7 @@ int main(int argc, char *argv[])
     }
 
     QSettings setting("HKEY_CURRENT_USER\\SOFTWARE\\kukaGame", QSettings::NativeFormat);
-    setting.setValue("version", "3.0.4.9");
+    setting.setValue("version", "3.0.4.8");
 
     if (setting.value("closeExit").isNull())
     {
@@ -255,13 +255,6 @@ int main(int argc, char *argv[])
                                                 [](QQmlEngine*, QJSEngine*) -> QObject* {
                                                     return new HomeGoodsModel();
                                                 });
-
-
-    qmlRegisterSingletonType<GameSkuModel>("GameSkuModel", 1, 0,
-                                               "GameSkuModel",
-                                               [](QQmlEngine*, QJSEngine*) -> QObject* {
-                                                   return new GameSkuModel();
-                                               });
 
     qmlRegisterSingletonType<ActivitiesNoticeModel>("ActivitiesNoticeModel", 1, 0,
                                            "ActivitiesNoticeModel",

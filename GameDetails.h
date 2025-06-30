@@ -2,7 +2,6 @@
 #define GAMEDETAILS_H
 
 #include <QObject>
-#include "models/GameSkuModel.h"
 
 class GameDetails : public QObject
 {
@@ -80,11 +79,6 @@ signals:
 public:
     Q_INVOKABLE void getGameDetailsInfo(const QString& gameId, const QString& goodsId);
     Q_INVOKABLE void refreshGameDetails();
-    Q_INVOKABLE void getGameSkuInfo(GameSkuModel* pGameSku);
-    Q_INVOKABLE void createGameOrder(int num, double payAmount,
-                                     const QString& goodsSkuId, int payType);
-    Q_INVOKABLE void queryPayStatus();
-    Q_INVOKABLE void closeOrder();
     Q_INVOKABLE void startStream(qint64 remainTime, const QString& packageName,
                                  const QString& gameChannel, const QString& ctoken, qint64 playtime, const QString& bid);
     Q_INVOKABLE void queryUserRemainTime();

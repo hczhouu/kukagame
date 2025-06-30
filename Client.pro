@@ -19,7 +19,6 @@ SOURCES += \
         models/GameDetailsImageModel.cpp \
         models/GameLabelListModel.cpp \
         models/GameLabelModel.cpp \
-        models/GameSkuModel.cpp \
         models/GamesOrderTableModel.cpp \
         models/HomeActivitiesModel.cpp \
         models/HomeBannerModel.cpp \
@@ -70,7 +69,6 @@ HEADERS += \
     models/GameDetailsImageModel.h \
     models/GameLabelListModel.h \
     models/GameLabelModel.h \
-    models/GameSkuModel.h \
     models/GamesOrderTableModel.h \
     models/HomeActivitiesModel.h \
     models/HomeBannerModel.h \

@@ -15,7 +15,6 @@
 #include "models/HomeHotGamesModel.h"
 #include "models/HomeGoodsTabModel.h"
 #include "models/HomeGoodsModel.h"
-#include "models/GameSkuModel.h"
 #include "models/ActivitiesNoticeModel.h"
 #include "models/DynamicNoticeModel.h"
 #include "models/SystemNoticeModel.h"

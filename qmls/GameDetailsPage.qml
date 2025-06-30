@@ -3,9 +3,7 @@ import QtQuick.Window 2.12
 import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.3
 import QtGraphicalEffects 1.0
-
 import GameDetails 1.0
-import GameSkuModel 1.0
 import GameDetailsImageModel 1.0
 
 //游戏详情页
@@ -126,42 +124,6 @@ Item {
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 30 * dpi
         spacing: 40 * dpi
-
-        //立即购买
-        Button {
-            width: 200 * dpi
-            height: 58 * dpi
-            visible: GameDetails.itemIsGoods
-            background: Rectangle {
-                color: "#1ECE9C"
-                radius: 10
-
-                Text {
-                    text:"立即购买"
-                    font.pixelSize: 24 * dpi
-                    font.bold: true
-                    color: "white"
-                    anchors.centerIn: parent
-                }
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                hoverEnabled: true
-                cursorShape:Qt.PointingHandCursor
-                onClicked:  {
-                    showSearchResult = false
-                    parent.forceActiveFocus()
-                    if (userLogined)
-                    {
-                        selIndex = 8
-                        GameDetails.getGameSkuInfo(GameSkuModel)
-                    } else {
-                        showPopup('LoginPopup.qml')
-                    }
-                }
-            }
-        }
 
         //启动游戏
         Button {
